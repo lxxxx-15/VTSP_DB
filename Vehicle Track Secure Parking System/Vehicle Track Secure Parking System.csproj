@@ -51,6 +51,9 @@
     <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
       <HintPath>..\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
     </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -89,6 +92,7 @@
     </Reference>
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -110,17 +114,41 @@
     <Compile Include="AdminProfile.Designer.cs">
       <DependentUpon>AdminProfile.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminArchiveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminArchiveForm.Designer.cs">
+      <DependentUpon>AdminArchiveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashierMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierMainForm.Designer.cs">
+      <DependentUpon>CashierMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashiersPersonalInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashiersPersonalInfo.Designer.cs">
+      <DependentUpon>CashiersPersonalInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashiersProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashiersProfile.Designer.cs">
+      <DependentUpon>CashiersProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminPersonalInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminPersonalInfoForm.Designer.cs">
       <DependentUpon>AdminPersonalInfoForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="AdminMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="AdminMainForm.Designer.cs">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="RegForm.cs">
       <SubType>Form</SubType>
@@ -151,11 +179,23 @@
     <EmbeddedResource Include="AdminProfile.resx">
       <DependentUpon>AdminProfile.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminArchiveForm.resx">
+      <DependentUpon>AdminArchiveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierMainForm.resx">
+      <DependentUpon>CashierMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashiersPersonalInfo.resx">
+      <DependentUpon>CashiersPersonalInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashiersProfile.resx">
+      <DependentUpon>CashiersProfile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminPersonalInfoForm.resx">
       <DependentUpon>AdminPersonalInfoForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="AdminMainForm.resx">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegForm.resx">
       <DependentUpon>RegForm.cs</DependentUpon>

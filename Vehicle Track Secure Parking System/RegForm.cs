@@ -17,6 +17,7 @@ namespace Vehicle_Track_Secure_Parking_System
        
         private readonly bool userExists;
 
+
         public static string firstName = "";
         public static string midName = "";
         public static string lastName = "";
@@ -27,7 +28,8 @@ namespace Vehicle_Track_Secure_Parking_System
         public RegForm()
         {
             InitializeComponent();
-            
+            RegDateTimePicker.MaxDate = DateTime.Today;
+            RegDateTimePicker.MinDate = DateTime.Today.AddYears(-60);
         }
 
         private void RegDateTimePicker_ValueChanged(object sender, EventArgs e)
@@ -165,8 +167,8 @@ namespace Vehicle_Track_Secure_Parking_System
 
         private void BtnAdminHistory_Click(object sender, EventArgs e)
         {
-            LoginForm form = new LoginForm();
-            form.Show();
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
             this.Hide();
         }
 
@@ -180,9 +182,33 @@ namespace Vehicle_Track_Secure_Parking_System
             email = RegEmail1.Text;
             username = EnterUsername1.Text;
 
-            ReviewInfo frm2 = new ReviewInfo();
-            frm2.Show();
+            ReviewInfo reviewInfo = new ReviewInfo();
+            reviewInfo.Show();
            
+        }
+
+        private void RegDateTimePicker_ValueChanged_1(object sender, EventArgs e)
+        {
+            DateTime selectedDate = RegDateTimePicker.Value;
+            DateTime today = DateTime.Today;
+            DateTime minimumDate = today.AddYears(-12);
+
+            if (selectedDate > today)
+            {
+                MessageBox.Show("The selected date cannot be in the future. Please select an appropriate date.", "Invalid Date", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                RegDateTimePicker.Value = today;
+            }
+            else if (selectedDate > minimumDate)
+            {
+                MessageBox.Show("The selected date indicates the age is less than 12 years. Please select an appropriate date.", "Invalid Date", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                RegDateTimePicker.Value = minimumDate;
+            }
+        
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }  
 }

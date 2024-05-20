@@ -11,8 +11,6 @@ C:\Users\asd\source\repos\Vehicle Track Secure Parking System\Vehicle Track Secu
 C:\Users\asd\source\repos\Vehicle Track Secure Parking System\Vehicle Track Secure Parking System\obj\Debug\Vehicle Track Secure Parking System.pdb
 C:\Users\asd\source\repos\Vehicle Track Secure Parking System\Vehicle Track Secure Parking System\obj\Debug\Vehicle_Track_Secure_Parking_System.LoginForm.resources
 C:\Users\asd\source\repos\Vehicle Track Secure Parking System\Vehicle Track Secure Parking System\obj\Debug\Vehicle_Track_Secure_Parking_System.RegForm.resources
-C:\Users\asd\source\repos\Vehicle Track Secure Parking System\Vehicle Track Secure Parking System\obj\Debug\Vehicle_Track_Secure_Parking_System.AdminProfile.resources
-C:\Users\asd\source\repos\Vehicle Track Secure Parking System\Vehicle Track Secure Parking System\obj\Debug\Vehicle_Track_Secure_Parking_System.AdminPersonalInfoForm.resources
 C:\Users\asd\source\repos\Vehicle Track Secure Parking System\Vehicle Track Secure Parking System\bin\Debug\BouncyCastle.Cryptography.dll
 C:\Users\asd\source\repos\Vehicle Track Secure Parking System\Vehicle Track Secure Parking System\bin\Debug\Google.Protobuf.dll
 C:\Users\asd\source\repos\Vehicle Track Secure Parking System\Vehicle Track Secure Parking System\bin\Debug\K4os.Compression.LZ4.dll
@@ -47,3 +45,10 @@ C:\Users\asd\source\repos\Vehicle Track Secure Parking System\Vehicle Track Secu
 C:\Users\asd\source\repos\Vehicle Track Secure Parking System\Vehicle Track Secure Parking System\obj\Debug\Vehicle_Track_Secure_Parking_System.StartForm.resources
 C:\Users\asd\source\repos\Vehicle Track Secure Parking System\Vehicle Track Secure Parking System\obj\Debug\Vehicle_Track_Secure_Parking_System.AdminMainForm.resources
 C:\Users\asd\source\repos\Vehicle Track Secure Parking System\Vehicle Track Secure Parking System\obj\Debug\Vehicle_Track_Secure_Parking_System.ReviewInfo.resources
+C:\Users\asd\source\repos\Vehicle Track Secure Parking System\Vehicle Track Secure Parking System\obj\Debug\Vehicle_Track_Secure_Parking_System.CashiersProfile.resources
+C:\Users\asd\source\repos\Vehicle Track Secure Parking System\Vehicle Track Secure Parking System\obj\Debug\Vehicle_Track_Secure_Parking_System.AdminProfile.resources
+C:\Users\asd\source\repos\Vehicle Track Secure Parking System\Vehicle Track Secure Parking System\obj\Debug\Vehicle_Track_Secure_Parking_System.AdminArchiveForm.resources
+C:\Users\asd\source\repos\Vehicle Track Secure Parking System\Vehicle Track Secure Parking System\obj\Debug\Vehicle_Track_Secure_Parking_System.CashiersPersonalInfo.resources
+C:\Users\asd\source\repos\Vehicle Track Secure Parking System\Vehicle Track Secure Parking System\obj\Debug\Vehicle_Track_Secure_Parking_System.AdminPersonalInfo.resources
+C:\Users\asd\source\repos\Vehicle Track Secure Parking System\Vehicle Track Secure Parking System\obj\Debug\Vehicle_Track_Secure_Parking_System.CashierMainForm.resources
+C:\Users\asd\source\repos\Vehicle Track Secure Parking System\Vehicle Track Secure Parking System\obj\Debug\Vehicle_Track_Secure_Parking_System.AdMainForm.resources

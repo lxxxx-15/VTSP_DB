@@ -30,17 +30,22 @@ namespace Vehicle_Track_Secure_Parking_System
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminProfile));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.ExitbtnAdminMainForm = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.DisplayDataInNewDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.BtnAdminPersonalInfo = new Guna.UI2.WinForms.Guna2Button();
             this.BtnAdminMainForm = new Guna.UI2.WinForms.Guna2Button();
-            this.BtnAdminHistory = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.CashiersArchivedData = new Guna.UI2.WinForms.Guna2Button();
             this.BtnAdminLogout = new Guna.UI2.WinForms.Guna2Button();
-            this.AdminProfileClose = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.DisplayDataInNewDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -52,10 +57,87 @@ namespace Vehicle_Track_Secure_Parking_System
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
+            // ExitbtnAdminMainForm
+            // 
+            this.ExitbtnAdminMainForm.BackColor = System.Drawing.Color.Goldenrod;
+            this.ExitbtnAdminMainForm.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.ExitbtnAdminMainForm.HoverState.ImageSize = new System.Drawing.Size(40, 40);
+            this.ExitbtnAdminMainForm.Image = ((System.Drawing.Image)(resources.GetObject("ExitbtnAdminMainForm.Image")));
+            this.ExitbtnAdminMainForm.ImageOffset = new System.Drawing.Point(0, 0);
+            this.ExitbtnAdminMainForm.ImageRotate = 0F;
+            this.ExitbtnAdminMainForm.ImageSize = new System.Drawing.Size(50, 50);
+            this.ExitbtnAdminMainForm.Location = new System.Drawing.Point(840, 0);
+            this.ExitbtnAdminMainForm.Name = "ExitbtnAdminMainForm";
+            this.ExitbtnAdminMainForm.PressedState.ImageSize = new System.Drawing.Size(40, 40);
+            this.ExitbtnAdminMainForm.Size = new System.Drawing.Size(60, 53);
+            this.ExitbtnAdminMainForm.TabIndex = 158;
+            this.ExitbtnAdminMainForm.Click += new System.EventHandler(this.ExitbtnAdminMainForm_Click);
+            // 
+            // DisplayDataInNewDataGridView
+            // 
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.DisplayDataInNewDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DisplayDataInNewDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            this.DisplayDataInNewDataGridView.ColumnHeadersHeight = 4;
+            this.DisplayDataInNewDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DisplayDataInNewDataGridView.DefaultCellStyle = dataGridViewCellStyle12;
+            this.DisplayDataInNewDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DisplayDataInNewDataGridView.Location = new System.Drawing.Point(348, 245);
+            this.DisplayDataInNewDataGridView.Name = "DisplayDataInNewDataGridView";
+            this.DisplayDataInNewDataGridView.RowHeadersVisible = false;
+            this.DisplayDataInNewDataGridView.Size = new System.Drawing.Size(451, 323);
+            this.DisplayDataInNewDataGridView.TabIndex = 156;
+            this.DisplayDataInNewDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.DisplayDataInNewDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.DisplayDataInNewDataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.DisplayDataInNewDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.DisplayDataInNewDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.DisplayDataInNewDataGridView.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.DisplayDataInNewDataGridView.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DisplayDataInNewDataGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DisplayDataInNewDataGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DisplayDataInNewDataGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DisplayDataInNewDataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.DisplayDataInNewDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.DisplayDataInNewDataGridView.ThemeStyle.HeaderStyle.Height = 4;
+            this.DisplayDataInNewDataGridView.ThemeStyle.ReadOnly = false;
+            this.DisplayDataInNewDataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.DisplayDataInNewDataGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DisplayDataInNewDataGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DisplayDataInNewDataGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.DisplayDataInNewDataGridView.ThemeStyle.RowsStyle.Height = 22;
+            this.DisplayDataInNewDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DisplayDataInNewDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Cooper Black", 18F);
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.DarkOrange;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(271, 162);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(217, 29);
+            this.guna2HtmlLabel1.TabIndex = 155;
+            this.guna2HtmlLabel1.Text = "Welcome, Admin!";
+            // 
             // BtnAdminPersonalInfo
             // 
             this.BtnAdminPersonalInfo.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.BtnAdminPersonalInfo, "BtnAdminPersonalInfo");
+            this.BtnAdminPersonalInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtnAdminPersonalInfo.BorderColor = System.Drawing.Color.AliceBlue;
             this.BtnAdminPersonalInfo.BorderRadius = 15;
             this.BtnAdminPersonalInfo.BorderThickness = 1;
@@ -64,14 +146,19 @@ namespace Vehicle_Track_Secure_Parking_System
             this.BtnAdminPersonalInfo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.BtnAdminPersonalInfo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.BtnAdminPersonalInfo.FillColor = System.Drawing.Color.OrangeRed;
+            this.BtnAdminPersonalInfo.Font = new System.Drawing.Font("Cooper Black", 12F);
             this.BtnAdminPersonalInfo.ForeColor = System.Drawing.Color.White;
+            this.BtnAdminPersonalInfo.Location = new System.Drawing.Point(-6, 245);
             this.BtnAdminPersonalInfo.Name = "BtnAdminPersonalInfo";
+            this.BtnAdminPersonalInfo.Size = new System.Drawing.Size(232, 67);
+            this.BtnAdminPersonalInfo.TabIndex = 150;
+            this.BtnAdminPersonalInfo.Text = "Admin\'s Information";
             this.BtnAdminPersonalInfo.Click += new System.EventHandler(this.BtnAdminPersonalInfo_Click);
             // 
             // BtnAdminMainForm
             // 
             this.BtnAdminMainForm.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.BtnAdminMainForm, "BtnAdminMainForm");
+            this.BtnAdminMainForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtnAdminMainForm.BorderColor = System.Drawing.Color.AliceBlue;
             this.BtnAdminMainForm.BorderRadius = 15;
             this.BtnAdminMainForm.BorderThickness = 1;
@@ -80,39 +167,41 @@ namespace Vehicle_Track_Secure_Parking_System
             this.BtnAdminMainForm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.BtnAdminMainForm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.BtnAdminMainForm.FillColor = System.Drawing.Color.Orange;
+            this.BtnAdminMainForm.Font = new System.Drawing.Font("Cooper Black", 12F);
             this.BtnAdminMainForm.ForeColor = System.Drawing.Color.White;
+            this.BtnAdminMainForm.Location = new System.Drawing.Point(-6, 333);
             this.BtnAdminMainForm.Name = "BtnAdminMainForm";
+            this.BtnAdminMainForm.Size = new System.Drawing.Size(232, 67);
+            this.BtnAdminMainForm.TabIndex = 152;
+            this.BtnAdminMainForm.Text = "Admin\'s Form";
             this.BtnAdminMainForm.Click += new System.EventHandler(this.BtnAdminMainForm_Click);
             // 
-            // BtnAdminHistory
+            // CashiersArchivedData
             // 
-            this.BtnAdminHistory.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.BtnAdminHistory, "BtnAdminHistory");
-            this.BtnAdminHistory.BorderColor = System.Drawing.Color.AliceBlue;
-            this.BtnAdminHistory.BorderRadius = 15;
-            this.BtnAdminHistory.BorderThickness = 1;
-            this.BtnAdminHistory.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtnAdminHistory.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtnAdminHistory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtnAdminHistory.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnAdminHistory.FillColor = System.Drawing.Color.LimeGreen;
-            this.BtnAdminHistory.FocusedColor = System.Drawing.Color.Transparent;
-            this.BtnAdminHistory.ForeColor = System.Drawing.Color.White;
-            this.BtnAdminHistory.Name = "BtnAdminHistory";
-            this.BtnAdminHistory.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
-            // guna2PictureBox1
-            // 
-            resources.ApplyResources(this.guna2PictureBox1, "guna2PictureBox1");
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
+            this.CashiersArchivedData.BackColor = System.Drawing.Color.Transparent;
+            this.CashiersArchivedData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.CashiersArchivedData.BorderColor = System.Drawing.Color.AliceBlue;
+            this.CashiersArchivedData.BorderRadius = 15;
+            this.CashiersArchivedData.BorderThickness = 1;
+            this.CashiersArchivedData.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.CashiersArchivedData.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.CashiersArchivedData.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.CashiersArchivedData.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.CashiersArchivedData.FillColor = System.Drawing.Color.LimeGreen;
+            this.CashiersArchivedData.FocusedColor = System.Drawing.Color.Transparent;
+            this.CashiersArchivedData.Font = new System.Drawing.Font("Cooper Black", 12F);
+            this.CashiersArchivedData.ForeColor = System.Drawing.Color.White;
+            this.CashiersArchivedData.Location = new System.Drawing.Point(-6, 418);
+            this.CashiersArchivedData.Name = "CashiersArchivedData";
+            this.CashiersArchivedData.Size = new System.Drawing.Size(232, 67);
+            this.CashiersArchivedData.TabIndex = 151;
+            this.CashiersArchivedData.Text = "Archived Data";
+            this.CashiersArchivedData.Click += new System.EventHandler(this.CashiersArchivedData_Click);
             // 
             // BtnAdminLogout
             // 
             this.BtnAdminLogout.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.BtnAdminLogout, "BtnAdminLogout");
+            this.BtnAdminLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtnAdminLogout.BorderColor = System.Drawing.Color.AliceBlue;
             this.BtnAdminLogout.BorderRadius = 15;
             this.BtnAdminLogout.BorderThickness = 1;
@@ -121,67 +210,71 @@ namespace Vehicle_Track_Secure_Parking_System
             this.BtnAdminLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.BtnAdminLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.BtnAdminLogout.FillColor = System.Drawing.Color.Navy;
+            this.BtnAdminLogout.Font = new System.Drawing.Font("Cooper Black", 12F);
             this.BtnAdminLogout.ForeColor = System.Drawing.Color.White;
+            this.BtnAdminLogout.Location = new System.Drawing.Point(-6, 501);
             this.BtnAdminLogout.Name = "BtnAdminLogout";
-            this.BtnAdminLogout.Click += new System.EventHandler(this.BtnAdminLogout_Click);
+            this.BtnAdminLogout.Size = new System.Drawing.Size(232, 67);
+            this.BtnAdminLogout.TabIndex = 153;
+            this.BtnAdminLogout.Text = "Log Out";
+            this.BtnAdminLogout.Click += new System.EventHandler(this.BtnCashierLogout_Click);
             // 
-            // AdminProfileClose
+            // guna2PictureBox1
             // 
-            this.AdminProfileClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.AdminProfileClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.AdminProfileClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.AdminProfileClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.AdminProfileClose.FillColor = System.Drawing.Color.Goldenrod;
-            resources.ApplyResources(this.AdminProfileClose, "AdminProfileClose");
-            this.AdminProfileClose.ForeColor = System.Drawing.Color.White;
-            this.AdminProfileClose.Name = "AdminProfileClose";
-            this.AdminProfileClose.Click += new System.EventHandler(this.StartFormClose_Click);
+            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(900, 53);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 159;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // guna2PictureBox2
             // 
-            this.guna2PictureBox2.AutoRoundedCorners = true;
-            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.BorderRadius = 68;
-            this.guna2PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            resources.ApplyResources(this.guna2PictureBox2, "guna2PictureBox2");
+            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(35, 59);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(151, 149);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox2.TabIndex = 160;
             this.guna2PictureBox2.TabStop = false;
-            this.guna2PictureBox2.Click += new System.EventHandler(this.guna2PictureBox2_Click);
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.guna2HtmlLabel1, "guna2HtmlLabel1");
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             // 
             // guna2PictureBox3
             // 
-            resources.ApplyResources(this.guna2PictureBox3, "guna2PictureBox3");
+            this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
             this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(665, 59);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(235, 206);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox3.TabIndex = 161;
             this.guna2PictureBox3.TabStop = false;
             // 
             // AdminProfile
             // 
-            resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.Controls.Add(this.guna2HtmlLabel1);
+            this.ClientSize = new System.Drawing.Size(900, 650);
             this.Controls.Add(this.guna2PictureBox2);
+            this.Controls.Add(this.ExitbtnAdminMainForm);
+            this.Controls.Add(this.DisplayDataInNewDataGridView);
+            this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.BtnAdminPersonalInfo);
             this.Controls.Add(this.BtnAdminMainForm);
-            this.Controls.Add(this.BtnAdminHistory);
+            this.Controls.Add(this.CashiersArchivedData);
             this.Controls.Add(this.BtnAdminLogout);
-            this.Controls.Add(this.AdminProfileClose);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2PictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminProfile";
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.Text = "AdminProfile";
             this.Load += new System.EventHandler(this.AdminProfile_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DisplayDataInNewDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
@@ -193,14 +286,15 @@ namespace Vehicle_Track_Secure_Parking_System
         #endregion
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2ImageButton ExitbtnAdminMainForm;
+        private Guna.UI2.WinForms.Guna2DataGridView DisplayDataInNewDataGridView;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Button BtnAdminPersonalInfo;
         private Guna.UI2.WinForms.Guna2Button BtnAdminMainForm;
-        private Guna.UI2.WinForms.Guna2Button BtnAdminHistory;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2Button CashiersArchivedData;
         private Guna.UI2.WinForms.Guna2Button BtnAdminLogout;
-        private Guna.UI2.WinForms.Guna2Button AdminProfileClose;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
     }
 }

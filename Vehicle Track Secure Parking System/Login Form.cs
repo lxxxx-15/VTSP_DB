@@ -8,12 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Text.RegularExpressions;
 
 namespace Vehicle_Track_Secure_Parking_System
 {
     public partial class LoginForm : Form
     {
         MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;database=vt_db");
+        private readonly string[] cashierUsernames = { "jiii", "kat123"};
+        private readonly string[] adminUsernames = { "larra123", "jov123"};
 
         public LoginForm()
         {
@@ -62,8 +65,8 @@ namespace Vehicle_Track_Secure_Parking_System
 
         private void RegLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            RegForm form = new RegForm();
-            form.Show();
+            RegForm regForm = new RegForm();
+            regForm.Show();
             this.Hide();
         }
 
@@ -72,12 +75,123 @@ namespace Vehicle_Track_Secure_Parking_System
 
         }
 
+        private bool IsValidUsername(string username)
+        {
+            string pattern = "^[a-z0-9]+$";
+            Regex regex = new Regex(pattern);
+            return regex.IsMatch(username);
+        }
+
+        private string DetermineRole(string username)
+        {
+            if (username.StartsWith("jiii"))
+            {
+                return "Cashier";
+            }
+            else
+            {
+                return "Admin";
+            }
+
+            if (username.StartsWith("kat123"))
+            {
+                return "Cashier";
+            }
+            else
+            {
+                return "Admin";
+            }
+
+            if (username.StartsWith("larra123"))
+            {
+                return "Admin";
+            }
+            else
+            {
+                return "Cashier";
+            }
+            if (username.StartsWith("jov123"))
+            {
+                return "Admin";
+            }
+            else
+            {
+                return "Cashier";
+            }
+
+        }
+
+        private void OpenFormsForRole(string role)
+        {
+            if (role == "Admin")
+            {
+                AdMainForm adminmainForm = new AdMainForm();
+                adminmainForm.Show();
+                this.Hide();
+
+                AdminPersonalInfo adminpersonalInfo = new AdminPersonalInfo();
+                adminpersonalInfo.Show();
+                this.Hide();
+
+                AdminProfile adminProfile = new AdminProfile();
+                adminProfile.Show();
+                this.Hide();
+
+                AdminArchiveForm adminarchiveForm = new AdminArchiveForm();
+                adminarchiveForm.Show();
+                this.Hide();
+            }
+            else if (role == "Cashier")
+            {
+                CashierMainForm cashierForm = new CashierMainForm();
+                cashierForm.Show();
+                this.Hide();
+
+                CashiersProfile cashiersProfile = new CashiersProfile();
+                cashiersProfile.Show();
+                this.Hide();
+
+                CashiersPersonalInfo cashiersersonalInfo = new CashiersPersonalInfo();
+                cashiersersonalInfo.Show();
+                this.Hide();
+            }
+        }
+
         private void LoginButton_Click_1(object sender, EventArgs e)
         {
-           
-           if (string.IsNullOrEmpty(LoginUsername.Text) || string.IsNullOrEmpty(LoginPassword.Text))
+            {
+                string text = LoginUsername.Text;
+                string username = text;
+
+                if (IsValidUsername(username))
                 {
-                    MessageBox.Show("Please input Username and Password", "Error");
+                    lblMessage.Text = "Username is valid!";
+                    lblMessage.ForeColor = System.Drawing.Color.Green;
+                }
+                else
+                {
+                    lblMessage.Text = "Invalid username! Only lowercase letters and numbers are allowed.";
+                    lblMessage.ForeColor = System.Drawing.Color.Red;
+                }
+            }
+            string Username = LoginUsername.Text;
+
+            if (IsValidUsername(Username))
+            {
+                string role = DetermineRole(Username);
+                MessageBox.Show($"Welcome, {role}! ", "Validation Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                OpenFormsForRole(role);
+            }
+            else
+            {
+                MessageBox.Show("Invalid username! Only lowercase letters and numbers are allowed.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+            if (string.IsNullOrEmpty(LoginUsername.Text) || string.IsNullOrEmpty(LoginPassword.Text))
+                {
+                    MessageBox.Show("Please input Username or Password", "Error");
                 }
            else
                 {
@@ -96,12 +210,7 @@ namespace Vehicle_Track_Secure_Parking_System
                                 {
                                     if (reader.Read())
                                     {
-                                        MessageBox.Show("Login Successful!");
-                                        this.Hide();
-                                        AdminProfile form = new AdminProfile();
-                                        form.Show();
-                                        this.Hide();
-
+                                        this.Hide();    
                                 }
                                     else
                                     {
@@ -122,10 +231,20 @@ namespace Vehicle_Track_Secure_Parking_System
 
         private void LogClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
         }
 
         private void guna2CircleProgressBar1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void lblMessage_Click(object sender, EventArgs e)
         {
 
         }

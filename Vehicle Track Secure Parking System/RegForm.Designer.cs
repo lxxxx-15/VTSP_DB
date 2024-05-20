@@ -51,15 +51,15 @@ namespace Vehicle_Track_Secure_Parking_System
             this.RegFName = new Guna.UI2.WinForms.Guna2TextBox();
             this.RegFormClose = new Guna.UI2.WinForms.Guna2Button();
             this.ReviewInfoBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.RegButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.RegClose = new Guna.UI2.WinForms.Guna2Button();
             this.BtnAdminHistory = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2GradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GradientPanel1
@@ -222,10 +222,11 @@ namespace Vehicle_Track_Secure_Parking_System
             this.RegDateTimePicker.FillColor = System.Drawing.Color.LightCyan;
             resources.ApplyResources(this.RegDateTimePicker, "RegDateTimePicker");
             this.RegDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.RegDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.RegDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.RegDateTimePicker.MaxDate = new System.DateTime(2024, 12, 31, 0, 0, 0, 0);
+            this.RegDateTimePicker.MinDate = new System.DateTime(2010, 1, 1, 0, 0, 0, 0);
             this.RegDateTimePicker.Name = "RegDateTimePicker";
             this.RegDateTimePicker.Value = new System.DateTime(2024, 5, 5, 23, 55, 54, 586);
+            this.RegDateTimePicker.ValueChanged += new System.EventHandler(this.RegDateTimePicker_ValueChanged_1);
             // 
             // RegLName
             // 
@@ -324,14 +325,6 @@ namespace Vehicle_Track_Secure_Parking_System
             this.ReviewInfoBtn.Name = "ReviewInfoBtn";
             this.ReviewInfoBtn.Click += new System.EventHandler(this.ReviewInfoBtn_Click);
             // 
-            // guna2PictureBox2
-            // 
-            resources.ApplyResources(this.guna2PictureBox2, "guna2PictureBox2");
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.TabStop = false;
-            this.guna2PictureBox2.Click += new System.EventHandler(this.guna2PictureBox2_Click);
-            // 
             // RegButton
             // 
             this.RegButton.BackColor = System.Drawing.Color.Transparent;
@@ -353,18 +346,6 @@ namespace Vehicle_Track_Secure_Parking_System
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // RegClose
-            // 
-            this.RegClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.RegClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.RegClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.RegClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.RegClose.FillColor = System.Drawing.Color.Goldenrod;
-            resources.ApplyResources(this.RegClose, "RegClose");
-            this.RegClose.ForeColor = System.Drawing.Color.White;
-            this.RegClose.Name = "RegClose";
-            this.RegClose.Click += new System.EventHandler(this.StartFormClose_Click);
             // 
             // BtnAdminHistory
             // 
@@ -397,19 +378,41 @@ namespace Vehicle_Track_Secure_Parking_System
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.Name = "guna2Button1";
             // 
+            // guna2PictureBox3
+            // 
+            resources.ApplyResources(this.guna2PictureBox3, "guna2PictureBox3");
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.TabStop = false;
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.Goldenrod;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(50, 50);
+            resources.ApplyResources(this.guna2ImageButton1, "guna2ImageButton1");
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
+            // 
             // RegForm
             // 
+            this.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.Controls.Add(this.guna2PictureBox2);
+            this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.BtnAdminHistory);
-            this.Controls.Add(this.RegClose);
             this.Controls.Add(this.ReviewInfoBtn);
-            this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.RegButton);
             this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.guna2GradientPanel1);
+            this.Controls.Add(this.guna2PictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
@@ -417,8 +420,8 @@ namespace Vehicle_Track_Secure_Parking_System
             this.Load += new System.EventHandler(this.RegForm_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -426,6 +429,12 @@ namespace Vehicle_Track_Secure_Parking_System
         #endregion
 
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
+        private Guna.UI2.WinForms.Guna2Button RegButton;
+        private Guna.UI2.WinForms.Guna2Button RegFormClose;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2Button ReviewInfoBtn;
+        private Guna.UI2.WinForms.Guna2Button BtnAdminHistory;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox RegRTPass1;
@@ -443,14 +452,8 @@ namespace Vehicle_Track_Secure_Parking_System
         private Guna.UI2.WinForms.Guna2TextBox RegLName;
         private Guna.UI2.WinForms.Guna2TextBox RegMidName;
         private Guna.UI2.WinForms.Guna2ComboBox GenderCmb;
-        private Guna.UI2.WinForms.Guna2Button RegButton;
         private Guna.UI2.WinForms.Guna2TextBox RegFName;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private Guna.UI2.WinForms.Guna2Button RegFormClose;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2Button RegClose;
-        private Guna.UI2.WinForms.Guna2Button ReviewInfoBtn;
-        private Guna.UI2.WinForms.Guna2Button BtnAdminHistory;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
     }
 }

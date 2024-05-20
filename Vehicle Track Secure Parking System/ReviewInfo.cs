@@ -42,9 +42,24 @@ namespace Vehicle_Track_Secure_Parking_System
 
         private void ReviewOkButton_Click(object sender, EventArgs e)
         {
-            RegForm frm2 = new RegForm();
-            frm2.Show();
+            RegForm regForm = new RegForm();
+            regForm.Show();
             this.Hide();
+        }
+
+        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ReviewLName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

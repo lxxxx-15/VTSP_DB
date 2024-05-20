@@ -32,12 +32,12 @@ namespace Vehicle_Track_Secure_Parking_System
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartForm));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.StartFormClose = new Guna.UI2.WinForms.Guna2Button();
             this.StartButton = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -46,32 +46,12 @@ namespace Vehicle_Track_Secure_Parking_System
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
-            // guna2PictureBox2
-            // 
-            resources.ApplyResources(this.guna2PictureBox2, "guna2PictureBox2");
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.TabStop = false;
-            this.guna2PictureBox2.Click += new System.EventHandler(this.guna2PictureBox2_Click);
-            // 
             // guna2PictureBox1
             // 
             resources.ApplyResources(this.guna2PictureBox1, "guna2PictureBox1");
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // StartFormClose
-            // 
-            this.StartFormClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.StartFormClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.StartFormClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.StartFormClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.StartFormClose.FillColor = System.Drawing.Color.Goldenrod;
-            resources.ApplyResources(this.StartFormClose, "StartFormClose");
-            this.StartFormClose.ForeColor = System.Drawing.Color.White;
-            this.StartFormClose.Name = "StartFormClose";
-            this.StartFormClose.Click += new System.EventHandler(this.StartFormClose_Click);
             // 
             // StartButton
             // 
@@ -91,13 +71,35 @@ namespace Vehicle_Track_Secure_Parking_System
             this.StartButton.Name = "StartButton";
             this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
             // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.Goldenrod;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(50, 50);
+            resources.ApplyResources(this.guna2ImageButton1, "guna2ImageButton1");
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
+            // 
+            // guna2PictureBox2
+            // 
+            resources.ApplyResources(this.guna2PictureBox2, "guna2PictureBox2");
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.TabStop = false;
+            this.guna2PictureBox2.Click += new System.EventHandler(this.guna2PictureBox2_Click_1);
+            // 
             // StartForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Cornsilk;
+            this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.StartButton);
-            this.Controls.Add(this.StartFormClose);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2PictureBox2);
             this.ForeColor = System.Drawing.Color.Wheat;
@@ -107,8 +109,8 @@ namespace Vehicle_Track_Secure_Parking_System
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -116,10 +118,10 @@ namespace Vehicle_Track_Secure_Parking_System
         #endregion
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2Button StartFormClose;
         private Guna.UI2.WinForms.Guna2Button StartButton;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
     }
 }
 
