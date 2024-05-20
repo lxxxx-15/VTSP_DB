@@ -15,30 +15,13 @@ namespace Vehicle_Track_Secure_Parking_System
     public partial class LoginForm : Form
     {
         MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;database=vt_db");
-        private readonly string[] cashierUsernames = { "jiii", "kat123"};
-        private readonly string[] adminUsernames = { "larra123", "jov123"};
 
         public LoginForm()
         {
             InitializeComponent();
         }
 
-        private void LoginButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2PictureBox2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
 
         }
@@ -70,21 +53,14 @@ namespace Vehicle_Track_Secure_Parking_System
             this.Hide();
         }
 
-        private void OkBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private bool IsValidUsername(string username)
         {
-            string pattern = "^[a-z0-9]+$";
-            Regex regex = new Regex(pattern);
-            return regex.IsMatch(username);
+            return System.Text.RegularExpressions.Regex.IsMatch(username, "^[a-z0-9]+$");
         }
 
-        private string DetermineRole(string username)
+        private string DetermineRole(string role)
         {
-            if (username.StartsWith("jiii"))
+            if (role.Equals("cashier", StringComparison.OrdinalIgnoreCase))
             {
                 return "Cashier";
             }
@@ -92,151 +68,95 @@ namespace Vehicle_Track_Secure_Parking_System
             {
                 return "Admin";
             }
-
-            if (username.StartsWith("kat123"))
-            {
-                return "Cashier";
-            }
-            else
-            {
-                return "Admin";
-            }
-
-            if (username.StartsWith("larra123"))
-            {
-                return "Admin";
-            }
-            else
-            {
-                return "Cashier";
-            }
-            if (username.StartsWith("jov123"))
-            {
-                return "Admin";
-            }
-            else
-            {
-                return "Cashier";
-            }
-
         }
 
         private void OpenFormsForRole(string role)
         {
-            if (role == "Admin")
+            switch (role.ToLower())
             {
-                AdMainForm adminmainForm = new AdMainForm();
-                adminmainForm.Show();
-                this.Hide();
-
-                AdminPersonalInfo adminpersonalInfo = new AdminPersonalInfo();
-                adminpersonalInfo.Show();
-                this.Hide();
-
-                AdminProfile adminProfile = new AdminProfile();
-                adminProfile.Show();
-                this.Hide();
-
-                AdminArchiveForm adminarchiveForm = new AdminArchiveForm();
-                adminarchiveForm.Show();
-                this.Hide();
+                case "admin":
+                    OpenAdminForm();
+                    break;
+                case "cashier":
+                    OpenCashierForm();
+                    break;
+                default:
+                    MessageBox.Show("Role not recognized.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    break;
             }
-            else if (role == "Cashier")
-            {
-                CashierMainForm cashierForm = new CashierMainForm();
-                cashierForm.Show();
-                this.Hide();
+        }
 
-                CashiersProfile cashiersProfile = new CashiersProfile();
-                cashiersProfile.Show();
-                this.Hide();
+        private void OpenAdminForm()
+        {
+            AdminProfile adminForm = new AdminProfile();
+            adminForm.Show();
+        }
 
-                CashiersPersonalInfo cashiersersonalInfo = new CashiersPersonalInfo();
-                cashiersersonalInfo.Show();
-                this.Hide();
-            }
+        private void OpenCashierForm()
+        {
+            CashiersProfile cashierForm = new CashiersProfile();
+            cashierForm.Show();
         }
 
         private void LoginButton_Click_1(object sender, EventArgs e)
         {
-            {
-                string text = LoginUsername.Text;
-                string username = text;
+            string username = LoginUsername.Text;
+            string password = LoginPassword.Text;
 
-                if (IsValidUsername(username))
-                {
-                    lblMessage.Text = "Username is valid!";
-                    lblMessage.ForeColor = System.Drawing.Color.Green;
-                }
-                else
-                {
-                    lblMessage.Text = "Invalid username! Only lowercase letters and numbers are allowed.";
-                    lblMessage.ForeColor = System.Drawing.Color.Red;
-                }
+            // Check if username and password fields are not empty
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Please input Username and Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            string Username = LoginUsername.Text;
 
-            if (IsValidUsername(Username))
+            // Validate username
+            if (IsValidUsername(username))
             {
-                string role = DetermineRole(Username);
-                MessageBox.Show($"Welcome, {role}! ", "Validation Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                OpenFormsForRole(role);
+                lblMessage.Text = "Username is valid!";
+                lblMessage.ForeColor = System.Drawing.Color.Green;
             }
             else
             {
-                MessageBox.Show("Invalid username! Only lowercase letters and numbers are allowed.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblMessage.Text = "Invalid username! Only lowercase letters and numbers are allowed.";
+                lblMessage.ForeColor = System.Drawing.Color.Red;
+                return;
             }
 
-
-            if (string.IsNullOrEmpty(LoginUsername.Text) || string.IsNullOrEmpty(LoginPassword.Text))
+            // Check credentials against the database
+            try
+            {
+                string selectQuery = "SELECT Role FROM vt_db.personal_info WHERE Username = @Username AND Password = @Password";
+                using (MySqlConnection connection = new MySqlConnection("server=localhost;port=3307;username=root;password=;database=vt_db"))
                 {
-                    MessageBox.Show("Please input Username or Password", "Error");
-                }
-           else
-                {
-                    try
+                    connection.Open();
+                    using (MySqlCommand command = new MySqlCommand(selectQuery, connection))
                     {
-                        string selectQuery = "SELECT * FROM vt_db.personal_info WHERE Username = @Username AND Password = @Password";
-                        using (MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;database=vt_db"))
-                        {
-                            connection.Open();
-                            using (MySqlCommand command = new MySqlCommand(selectQuery, connection))
-                            {
-                                command.Parameters.AddWithValue("@Username", LoginUsername.Text);
-                                command.Parameters.AddWithValue("@Password", LoginPassword.Text);
+                        command.Parameters.AddWithValue("@Username", username);
+                        command.Parameters.AddWithValue("@Password", password);
 
-                                using (MySqlDataReader reader = command.ExecuteReader())
-                                {
-                                    if (reader.Read())
-                                    {
-                                        this.Hide();    
-                                }
-                                    else
-                                    {
-                                        MessageBox.Show("Incorrect Login Information! Try again.");
-                                    }
-                                }
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                string role = reader["Role"].ToString();
+                                this.Hide();
+                                string userRole = DetermineRole(role);
+                                MessageBox.Show($"Welcome, {userRole}!", "Validation Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                OpenFormsForRole(userRole);
+                            }
+                            else
+                            {
+                                MessageBox.Show("Incorrect Login Information! Try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }
                     }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("An error occurred: " + ex.Message, "Error");
-
-                    }
                 }
             }
-
-
-        private void LogClose_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void guna2CircleProgressBar1_ValueChanged(object sender, EventArgs e)
-        {
-
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
@@ -250,6 +170,6 @@ namespace Vehicle_Track_Secure_Parking_System
         }
     }
 
-    }
+}
 
 

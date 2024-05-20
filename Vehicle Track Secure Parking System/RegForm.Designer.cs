@@ -56,8 +56,9 @@ namespace Vehicle_Track_Secure_Parking_System
             this.RegRTPass1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.LblRole = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.RoleCmb = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
@@ -373,12 +374,19 @@ namespace Vehicle_Track_Secure_Parking_System
             this.label2.ForeColor = System.Drawing.Color.DodgerBlue;
             this.label2.Name = "label2";
             // 
+            // LblRole
+            // 
+            resources.ApplyResources(this.LblRole, "LblRole");
+            this.LblRole.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.LblRole.Name = "LblRole";
+            // 
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.guna2GradientPanel1.BorderRadius = 15;
             this.guna2GradientPanel1.BorderThickness = 2;
-            this.guna2GradientPanel1.Controls.Add(this.label3);
+            this.guna2GradientPanel1.Controls.Add(this.RoleCmb);
+            this.guna2GradientPanel1.Controls.Add(this.LblRole);
             this.guna2GradientPanel1.Controls.Add(this.label2);
             this.guna2GradientPanel1.Controls.Add(this.label1);
             this.guna2GradientPanel1.Controls.Add(this.RegRTPass1);
@@ -401,11 +409,22 @@ namespace Vehicle_Track_Secure_Parking_System
             resources.ApplyResources(this.guna2GradientPanel1, "guna2GradientPanel1");
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             // 
-            // label3
+            // RoleCmb
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label3.Name = "label3";
+            this.RoleCmb.BackColor = System.Drawing.Color.Transparent;
+            this.RoleCmb.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.RoleCmb.BorderRadius = 15;
+            this.RoleCmb.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.RoleCmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.RoleCmb.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.RoleCmb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.RoleCmb, "RoleCmb");
+            this.RoleCmb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.RoleCmb.Items.AddRange(new object[] {
+            resources.GetString("RoleCmb.Items"),
+            resources.GetString("RoleCmb.Items1")});
+            this.RoleCmb.Name = "RoleCmb";
+            this.RoleCmb.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // RegForm
             // 
@@ -461,7 +480,8 @@ namespace Vehicle_Track_Secure_Parking_System
         private Guna.UI2.WinForms.Guna2TextBox RegRTPass1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LblRole;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
-        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2ComboBox RoleCmb;
     }
 }

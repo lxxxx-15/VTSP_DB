@@ -23,18 +23,7 @@ namespace Vehicle_Track_Secure_Parking_System
         private void AdminPersonalInfoForm_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void BtnAdminPersonalInfo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AdminProfileClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
+        }      
         private void BtnAdminLogout_Click(object sender, EventArgs e)
         {
             AdminProfile adminProfile = new AdminProfile();
@@ -42,17 +31,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.Hide();
         }
 
-        private void guna2ContextMenuStrip1_Opening(object sender, CancelEventArgs e)
-        {
-
-        }
-
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox2_Click(object sender, EventArgs e)
         {
 
         }

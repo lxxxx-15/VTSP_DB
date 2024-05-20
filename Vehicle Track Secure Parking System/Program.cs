@@ -8,18 +8,12 @@ namespace Vehicle_Track_Secure_Parking_System
 {
     static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StartForm());
-            Application.Run(new CashiersProfile());
-            Application.Run(new AdMainForm());
-            
+            Application.Run(new StartForm());            
         }
     }
 }

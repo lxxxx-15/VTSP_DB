@@ -17,11 +17,6 @@ namespace Vehicle_Track_Secure_Parking_System
             InitializeComponent();
         }
 
-        private void guna2PictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnAdminPersonalInfo_Click(object sender, EventArgs e)
         {
             AdminPersonalInfo adminpersonalifoForm = new AdminPersonalInfo();
@@ -48,16 +43,16 @@ namespace Vehicle_Track_Secure_Parking_System
             this.Close();
         }
 
-        private void CashiersArchivedData_Click(object sender, EventArgs e)
+        private void AdminProfile_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminArchivedData_Click(object sender, EventArgs e)
         {
             AdminArchiveForm adminarchiveForm = new AdminArchiveForm();
             adminarchiveForm.Show();
             this.Hide();
-        }
-
-        private void AdminProfile_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

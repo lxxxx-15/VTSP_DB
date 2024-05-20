@@ -39,7 +39,7 @@ namespace Vehicle_Track_Secure_Parking_System
             TimeInBtnn.Text = timeSpan.ToString(@"hh\:mm\:ss");
 
             seconds++;
-            UpdateTime();
+            //UpdateTime();
 
 
             try

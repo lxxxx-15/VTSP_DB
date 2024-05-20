@@ -30,9 +30,9 @@ namespace Vehicle_Track_Secure_Parking_System
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminProfile));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.ExitbtnAdminMainForm = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -40,11 +40,11 @@ namespace Vehicle_Track_Secure_Parking_System
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.BtnAdminPersonalInfo = new Guna.UI2.WinForms.Guna2Button();
             this.BtnAdminMainForm = new Guna.UI2.WinForms.Guna2Button();
-            this.CashiersArchivedData = new Guna.UI2.WinForms.Guna2Button();
             this.BtnAdminLogout = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.AdminArchivedData = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.DisplayDataInNewDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -75,26 +75,26 @@ namespace Vehicle_Track_Secure_Parking_System
             // 
             // DisplayDataInNewDataGridView
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.DisplayDataInNewDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DisplayDataInNewDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.DisplayDataInNewDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DisplayDataInNewDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.DisplayDataInNewDataGridView.ColumnHeadersHeight = 4;
             this.DisplayDataInNewDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DisplayDataInNewDataGridView.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DisplayDataInNewDataGridView.DefaultCellStyle = dataGridViewCellStyle6;
             this.DisplayDataInNewDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DisplayDataInNewDataGridView.Location = new System.Drawing.Point(348, 245);
             this.DisplayDataInNewDataGridView.Name = "DisplayDataInNewDataGridView";
@@ -176,28 +176,6 @@ namespace Vehicle_Track_Secure_Parking_System
             this.BtnAdminMainForm.Text = "Admin\'s Form";
             this.BtnAdminMainForm.Click += new System.EventHandler(this.BtnAdminMainForm_Click);
             // 
-            // CashiersArchivedData
-            // 
-            this.CashiersArchivedData.BackColor = System.Drawing.Color.Transparent;
-            this.CashiersArchivedData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.CashiersArchivedData.BorderColor = System.Drawing.Color.AliceBlue;
-            this.CashiersArchivedData.BorderRadius = 15;
-            this.CashiersArchivedData.BorderThickness = 1;
-            this.CashiersArchivedData.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.CashiersArchivedData.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.CashiersArchivedData.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.CashiersArchivedData.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.CashiersArchivedData.FillColor = System.Drawing.Color.LimeGreen;
-            this.CashiersArchivedData.FocusedColor = System.Drawing.Color.Transparent;
-            this.CashiersArchivedData.Font = new System.Drawing.Font("Cooper Black", 12F);
-            this.CashiersArchivedData.ForeColor = System.Drawing.Color.White;
-            this.CashiersArchivedData.Location = new System.Drawing.Point(-6, 418);
-            this.CashiersArchivedData.Name = "CashiersArchivedData";
-            this.CashiersArchivedData.Size = new System.Drawing.Size(232, 67);
-            this.CashiersArchivedData.TabIndex = 151;
-            this.CashiersArchivedData.Text = "Archived Data";
-            this.CashiersArchivedData.Click += new System.EventHandler(this.CashiersArchivedData_Click);
-            // 
             // BtnAdminLogout
             // 
             this.BtnAdminLogout.BackColor = System.Drawing.Color.Transparent;
@@ -254,19 +232,41 @@ namespace Vehicle_Track_Secure_Parking_System
             this.guna2PictureBox3.TabIndex = 161;
             this.guna2PictureBox3.TabStop = false;
             // 
+            // AdminArchivedData
+            // 
+            this.AdminArchivedData.BackColor = System.Drawing.Color.Transparent;
+            this.AdminArchivedData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.AdminArchivedData.BorderColor = System.Drawing.Color.AliceBlue;
+            this.AdminArchivedData.BorderRadius = 15;
+            this.AdminArchivedData.BorderThickness = 1;
+            this.AdminArchivedData.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.AdminArchivedData.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.AdminArchivedData.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.AdminArchivedData.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.AdminArchivedData.FillColor = System.Drawing.Color.LimeGreen;
+            this.AdminArchivedData.FocusedColor = System.Drawing.Color.Transparent;
+            this.AdminArchivedData.Font = new System.Drawing.Font("Cooper Black", 12F);
+            this.AdminArchivedData.ForeColor = System.Drawing.Color.White;
+            this.AdminArchivedData.Location = new System.Drawing.Point(-16, 415);
+            this.AdminArchivedData.Name = "AdminArchivedData";
+            this.AdminArchivedData.Size = new System.Drawing.Size(232, 67);
+            this.AdminArchivedData.TabIndex = 162;
+            this.AdminArchivedData.Text = "Archived Data";
+            this.AdminArchivedData.Click += new System.EventHandler(this.AdminArchivedData_Click);
+            // 
             // AdminProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(900, 650);
+            this.Controls.Add(this.AdminArchivedData);
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.ExitbtnAdminMainForm);
             this.Controls.Add(this.DisplayDataInNewDataGridView);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.BtnAdminPersonalInfo);
             this.Controls.Add(this.BtnAdminMainForm);
-            this.Controls.Add(this.CashiersArchivedData);
             this.Controls.Add(this.BtnAdminLogout);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2PictureBox3);
@@ -291,10 +291,10 @@ namespace Vehicle_Track_Secure_Parking_System
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Button BtnAdminPersonalInfo;
         private Guna.UI2.WinForms.Guna2Button BtnAdminMainForm;
-        private Guna.UI2.WinForms.Guna2Button CashiersArchivedData;
         private Guna.UI2.WinForms.Guna2Button BtnAdminLogout;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
+        private Guna.UI2.WinForms.Guna2Button AdminArchivedData;
     }
 }

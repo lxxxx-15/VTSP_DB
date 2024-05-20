@@ -40,18 +40,6 @@ namespace Vehicle_Track_Secure_Parking_System
             TimerIn.Start();
             TimerOut.Start();
 
-
-
-        }
-
-        private void guna2PictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox7_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -66,21 +54,6 @@ namespace Vehicle_Track_Secure_Parking_System
             {
                 DataGridViewMainForm.Rows.RemoveAt(DataGridViewMainForm.CurrentRow.Index);
             }
-        }
-
-        private void guna2PictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RegDateTimePicker_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void AddBtn_Click(object sender, EventArgs e)
@@ -156,170 +129,14 @@ namespace Vehicle_Track_Secure_Parking_System
             this.Close();
         }
 
-        private void StartFormClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void DtpTimeOut_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void SaveDataToDatabase(string text1, string text2, string text3, object intime, object outtime, object formattedDuration, object payment)
-        {
-            throw new NotImplementedException();
-        }
-
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
 
         }
-
-        private void guna2PictureBox7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PlateNumber_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void TimerOutBtn_Click(object sender, EventArgs e)
-        {
-            
-        }
-
- 
-
-        private void guna2PictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnAdminMainForm_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void VModel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void VType_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Duration_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Payment_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TbVId_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TbDuration_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void VehicleType_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Model1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TimeInLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox4_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox3_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TimeInLabel_Click_1(object sender, EventArgs e)
-        {
-            TimeInLabel.Text = DateTime.Now.ToString("HH:mm:ss");
-        }
-
-        private void UpdateTimeInLabel()
-        {
-            TimeInLabel.Text = DateTime.Now.ToString("HH:mm:ss");
-        }
-
-
-        private void TimeOutLabel_Click(object sender, EventArgs e)
-        {
-            TimeOutLabel.Text = DateTime.Now.ToString("HH:mm:ss");
-        }
-
-        private void UpdateTimeOutLabel()
-        {
-            TimeOutLabel.Text = DateTime.Now.ToString("HH:mm:ss");
-        }
-
         private void TimerInBtn_Click(object sender, EventArgs e)
         {
              DateTime currentTime = DateTime.Now;
              TimeInLabel.Text = "Time In: " + currentTime.ToString("HH:mm:ss");
-        }
-
-        private void TimerOutBtn_Click_1(object sender, EventArgs e)
-        {
-            DateTime currentTime = DateTime.Now;
-            TimeOutLabel.Text = "Time Out: " + currentTime.ToString("HH:mm:ss");
         }
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
@@ -327,10 +144,6 @@ namespace Vehicle_Track_Secure_Parking_System
             this.Close();
         }
 
-        private void chart1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 
