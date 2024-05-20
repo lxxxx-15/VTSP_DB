@@ -22,14 +22,7 @@ namespace Vehicle_Track_Secure_Parking_System
 
         private void AdminPersonalInfoForm_Load(object sender, EventArgs e)
         {
-            FetchData();
-        }
-
-        private void FetchData()
-        {
-            throw new NotImplementedException();
-
-
+          
         }
 
         private void BtnAdminLogout_Click(object sender, EventArgs e)

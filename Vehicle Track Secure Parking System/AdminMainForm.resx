@@ -411,36 +411,6 @@
     <value>0</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="TimerInBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="TimerInBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Cooper Black, 12pt</value>
-  </data>
-  <data name="TimerInBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 330</value>
-  </data>
-  <data name="TimerInBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 36</value>
-  </data>
-  <data name="TimerInBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>132</value>
-  </data>
-  <data name="TimerInBtn.Text" xml:space="preserve">
-    <value>In</value>
-  </data>
-  <data name="&gt;&gt;TimerInBtn.Name" xml:space="preserve">
-    <value>TimerInBtn</value>
-  </data>
-  <data name="&gt;&gt;TimerInBtn.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;TimerInBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TimerInBtn.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="BtnAdminMainForm.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
   </data>
@@ -469,37 +439,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BtnAdminMainForm.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="OkBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="OkBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Cooper Black, 12pt</value>
-  </data>
-  <data name="OkBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 185</value>
-  </data>
-  <data name="OkBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 30</value>
-  </data>
-  <data name="OkBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>97</value>
-  </data>
-  <data name="OkBtn.Text" xml:space="preserve">
-    <value>Add</value>
-  </data>
-  <data name="&gt;&gt;OkBtn.Name" xml:space="preserve">
-    <value>OkBtn</value>
-  </data>
-  <data name="&gt;&gt;OkBtn.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;OkBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;OkBtn.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="guna2Button4.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
@@ -529,67 +469,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;guna2Button4.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="BtnUpdate.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="BtnUpdate.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Cooper Black, 12pt</value>
-  </data>
-  <data name="BtnUpdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 230</value>
-  </data>
-  <data name="BtnUpdate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 30</value>
-  </data>
-  <data name="BtnUpdate.TabIndex" type="System.Int32, mscorlib">
-    <value>93</value>
-  </data>
-  <data name="BtnUpdate.Text" xml:space="preserve">
-    <value>Update</value>
-  </data>
-  <data name="&gt;&gt;BtnUpdate.Name" xml:space="preserve">
-    <value>BtnUpdate</value>
-  </data>
-  <data name="&gt;&gt;BtnUpdate.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;BtnUpdate.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BtnUpdate.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="ArchiveBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="ArchiveBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Cooper Black, 12pt</value>
-  </data>
-  <data name="ArchiveBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 280</value>
-  </data>
-  <data name="ArchiveBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 30</value>
-  </data>
-  <data name="ArchiveBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>92</value>
-  </data>
-  <data name="ArchiveBtn.Text" xml:space="preserve">
-    <value>Archive</value>
-  </data>
-  <data name="&gt;&gt;ArchiveBtn.Name" xml:space="preserve">
-    <value>ArchiveBtn</value>
-  </data>
-  <data name="&gt;&gt;ArchiveBtn.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;ArchiveBtn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ArchiveBtn.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>2</value>
   </data>
   <data name="guna2PictureBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -629,7 +509,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;guna2PictureBox1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>3</value>
   </data>
   <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
     <value>True</value>

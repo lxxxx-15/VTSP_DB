@@ -26,7 +26,6 @@ namespace Vehicle_Track_Secure_Parking_System
             adminpersonalifoForm.Show();
             this.Hide();
 
-            FetchData();
         }
 
         private void BtnAdminMainForm_Click(object sender, EventArgs e)
@@ -50,15 +49,8 @@ namespace Vehicle_Track_Secure_Parking_System
 
         private void AdminProfile_Load(object sender, EventArgs e)
         {
-            FetchData();
+            
         }
-
-        private void FetchData()
-        {
-            throw new NotImplementedException();
-
-        }
-
         private void AdminArchivedData_Click(object sender, EventArgs e)
         {
             AdminArchiveForm adminarchiveForm = new AdminArchiveForm();
