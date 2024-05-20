@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
 
 namespace Vehicle_Track_Secure_Parking_System
 {
     public partial class AdminProfile : Form
     {
+        MySqlConnection connection = new MySqlConnection("server=localhost;port=3307;username=root;password=;database=vt_db");
         public AdminProfile()
         {
             InitializeComponent();
@@ -22,6 +25,8 @@ namespace Vehicle_Track_Secure_Parking_System
             AdminPersonalInfo adminpersonalifoForm = new AdminPersonalInfo();
             adminpersonalifoForm.Show();
             this.Hide();
+
+            FetchData();
         }
 
         private void BtnAdminMainForm_Click(object sender, EventArgs e)
@@ -45,6 +50,12 @@ namespace Vehicle_Track_Secure_Parking_System
 
         private void AdminProfile_Load(object sender, EventArgs e)
         {
+            FetchData();
+        }
+
+        private void FetchData()
+        {
+            throw new NotImplementedException();
 
         }
 

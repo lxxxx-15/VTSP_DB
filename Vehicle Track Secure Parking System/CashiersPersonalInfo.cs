@@ -158,5 +158,10 @@ namespace Vehicle_Track_Secure_Parking_System
         {
 
         }
+
+        private void CashiersPersonalInfo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

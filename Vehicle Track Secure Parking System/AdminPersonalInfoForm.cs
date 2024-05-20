@@ -13,7 +13,7 @@ namespace Vehicle_Track_Secure_Parking_System
 {
     public partial class AdminPersonalInfo : Form
     {
-        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;database=vt_db");
+        MySqlConnection connection = new MySqlConnection("server=localhost;port=3307;username=root;password=;database=vt_db");
 
         public AdminPersonalInfo()
         {
@@ -22,8 +22,16 @@ namespace Vehicle_Track_Secure_Parking_System
 
         private void AdminPersonalInfoForm_Load(object sender, EventArgs e)
         {
+            FetchData();
+        }
 
-        }      
+        private void FetchData()
+        {
+            throw new NotImplementedException();
+
+
+        }
+
         private void BtnAdminLogout_Click(object sender, EventArgs e)
         {
             AdminProfile adminProfile = new AdminProfile();
