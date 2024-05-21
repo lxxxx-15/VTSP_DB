@@ -19,15 +19,11 @@ namespace Vehicle_Track_Secure_Parking_System
             ReviewFName.Text = RegForm.firstName;
             ReviewMidName.Text = RegForm.midName;
             ReviewLName.Text = RegForm.lastName;
+            ReviewRole.Text = RegForm.role;
             ReviewGender.Text = RegForm.gender;
             ReviewBirthday.Text = RegForm.birthday;
             ReviewEmail.Text = RegForm.email;
             ReviewUsername.Text = RegForm.username;
-        }
-
-        private void ReviewInfoClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void ReviewFullName_Click(object sender, EventArgs e)
@@ -60,6 +56,11 @@ namespace Vehicle_Track_Secure_Parking_System
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ReviewLabelGender_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

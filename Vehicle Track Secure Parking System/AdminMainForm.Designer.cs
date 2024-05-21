@@ -33,12 +33,8 @@ namespace Vehicle_Track_Secure_Parking_System
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdMainForm));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.ArchiveBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.BtnUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.OkBtn = new Guna.UI2.WinForms.Guna2Button();
             this.BtnAdminMainForm = new Guna.UI2.WinForms.Guna2Button();
-            this.TimerInBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,38 +51,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // ArchiveBtn
-            // 
-            this.ArchiveBtn.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.ArchiveBtn, "ArchiveBtn");
-            this.ArchiveBtn.BorderColor = System.Drawing.Color.AliceBlue;
-            this.ArchiveBtn.BorderRadius = 15;
-            this.ArchiveBtn.BorderThickness = 1;
-            this.ArchiveBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.ArchiveBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.ArchiveBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.ArchiveBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.ArchiveBtn.FillColor = System.Drawing.Color.OrangeRed;
-            this.ArchiveBtn.ForeColor = System.Drawing.Color.White;
-            this.ArchiveBtn.Name = "ArchiveBtn";
-            this.ArchiveBtn.Click += new System.EventHandler(this.ArchiveBtn_Click);
-            // 
-            // BtnUpdate
-            // 
-            this.BtnUpdate.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.BtnUpdate, "BtnUpdate");
-            this.BtnUpdate.BorderColor = System.Drawing.Color.AliceBlue;
-            this.BtnUpdate.BorderRadius = 15;
-            this.BtnUpdate.BorderThickness = 1;
-            this.BtnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnUpdate.FillColor = System.Drawing.Color.LimeGreen;
-            this.BtnUpdate.ForeColor = System.Drawing.Color.White;
-            this.BtnUpdate.Name = "BtnUpdate";
-            this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // guna2Button4
             // 
@@ -103,22 +68,6 @@ namespace Vehicle_Track_Secure_Parking_System
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
-            // OkBtn
-            // 
-            this.OkBtn.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.OkBtn, "OkBtn");
-            this.OkBtn.BorderColor = System.Drawing.Color.AliceBlue;
-            this.OkBtn.BorderRadius = 15;
-            this.OkBtn.BorderThickness = 1;
-            this.OkBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.OkBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.OkBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.OkBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.OkBtn.FillColor = System.Drawing.Color.Orange;
-            this.OkBtn.ForeColor = System.Drawing.Color.White;
-            this.OkBtn.Name = "OkBtn";
-            this.OkBtn.Click += new System.EventHandler(this.AddBtn_Click);
-            // 
             // BtnAdminMainForm
             // 
             this.BtnAdminMainForm.BackColor = System.Drawing.Color.Transparent;
@@ -133,21 +82,6 @@ namespace Vehicle_Track_Secure_Parking_System
             this.BtnAdminMainForm.FillColor = System.Drawing.Color.Orange;
             this.BtnAdminMainForm.ForeColor = System.Drawing.Color.White;
             this.BtnAdminMainForm.Name = "BtnAdminMainForm";
-            // 
-            // TimerInBtn
-            // 
-            this.TimerInBtn.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.TimerInBtn, "TimerInBtn");
-            this.TimerInBtn.BorderColor = System.Drawing.Color.AliceBlue;
-            this.TimerInBtn.BorderRadius = 15;
-            this.TimerInBtn.BorderThickness = 1;
-            this.TimerInBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.TimerInBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.TimerInBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.TimerInBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.TimerInBtn.ForeColor = System.Drawing.Color.White;
-            this.TimerInBtn.Name = "TimerInBtn";
-            this.TimerInBtn.Click += new System.EventHandler(this.TimerInBtn_Click);
             // 
             // guna2ImageButton1
             // 
@@ -169,12 +103,8 @@ namespace Vehicle_Track_Secure_Parking_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.Controls.Add(this.guna2ImageButton1);
-            this.Controls.Add(this.TimerInBtn);
             this.Controls.Add(this.BtnAdminMainForm);
-            this.Controls.Add(this.OkBtn);
             this.Controls.Add(this.guna2Button4);
-            this.Controls.Add(this.BtnUpdate);
-            this.Controls.Add(this.ArchiveBtn);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdMainForm";
@@ -191,12 +121,8 @@ namespace Vehicle_Track_Secure_Parking_System
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2Button BtnUpdate;
-        private Guna.UI2.WinForms.Guna2Button ArchiveBtn;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button OkBtn;
         private Guna.UI2.WinForms.Guna2Button BtnAdminMainForm;
-        private Guna.UI2.WinForms.Guna2Button TimerInBtn;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
     }
 }

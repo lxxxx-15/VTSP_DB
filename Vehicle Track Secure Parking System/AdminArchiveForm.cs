@@ -23,5 +23,15 @@ namespace Vehicle_Track_Secure_Parking_System
             adminProfile.Show();
             this.Hide();
         }
+
+        private void ExitbtnAdminMainForm_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void AdminArchiveForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

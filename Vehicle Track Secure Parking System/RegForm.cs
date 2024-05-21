@@ -13,11 +13,11 @@ namespace Vehicle_Track_Secure_Parking_System
 {
     public partial class RegForm : Form
     {
-        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;database=vt_db");
+        MySqlConnection connection = new MySqlConnection("server=localhost;port=3307;username=root;password=;database=vt_db");
        
         private readonly bool userExists;
 
-
+        public static string role = "";
         public static string firstName = "";
         public static string midName = "";
         public static string lastName = "";
@@ -31,37 +31,7 @@ namespace Vehicle_Track_Secure_Parking_System
             RegDateTimePicker.MaxDate = DateTime.Today;
             RegDateTimePicker.MinDate = DateTime.Today.AddYears(-60);
         }
-
-        private void RegDateTimePicker_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void GenderCmb_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RegButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
+   
         private void RegForm_Load(object sender, EventArgs e)
         {
 
@@ -69,44 +39,10 @@ namespace Vehicle_Track_Secure_Parking_System
 
         private void RegButton_Click_1(object sender, EventArgs e)
         {
-             
-           
             GenderCmb.Items.Add("Female");
             GenderCmb.Items.Add("Male");
-
-            try
-            {
-                if (!userExists)
-                {
-                    using (MySqlConnection conn = new MySqlConnection("server=localhost;port=3306;username=root;password=;database=vt_db"))
-                    {
-                        conn.Open();
-                        string iquery = "INSERT INTO vt_db.personal_info (FirstName, MiddleName, LastName, Gender, Birthday, Email, Username, Password)" +
-                            " VALUES (@firstname, @middlename, @lastname, @gender, @birthday, @email, @username, @password)";
-
-                        MySqlCommand cmd = new MySqlCommand(iquery, conn);
-                        cmd.Parameters.AddWithValue("@firstname", RegFName.Text);
-                        cmd.Parameters.AddWithValue("@middlename", RegMidName.Text);
-                        cmd.Parameters.AddWithValue("@lastname", RegLName.Text);
-                        cmd.Parameters.AddWithValue("@gender", GenderCmb.SelectedItem.ToString());
-                        cmd.Parameters.AddWithValue("@birthday", RegDateTimePicker.Value.ToString("MM-dd-yyyy"));
-                        cmd.Parameters.AddWithValue("@Email", RegEmail1.Text);
-                        cmd.Parameters.AddWithValue("@username", EnterUsername1.Text);
-                        cmd.Parameters.AddWithValue("@password", RegPass1.Text);
-
-                        cmd.ExecuteNonQuery();
-                    }
-                }
-            
-            }
-
-            finally
-            {
-                connection.Close();
-            }
-
-
-
+            RoleCmb.Items.Add("Admin");
+            RoleCmb.Items.Add("Cashier");
 
             if (RegPass1.Text != RegRTPass1.Text)
             {
@@ -114,7 +50,7 @@ namespace Vehicle_Track_Secure_Parking_System
                 return;
             }
 
-            if (string.IsNullOrEmpty(RegFName.Text) || string.IsNullOrEmpty(RegMidName.Text) || string.IsNullOrEmpty(RegLName.Text) ||
+            if (string.IsNullOrEmpty(RoleCmb.Text) || string.IsNullOrEmpty(RegFName.Text) || string.IsNullOrEmpty(RegMidName.Text) || string.IsNullOrEmpty(RegLName.Text) ||
                 string.IsNullOrEmpty(GenderCmb.Text) || string.IsNullOrEmpty(RegEmail1.Text) || string.IsNullOrEmpty(EnterUsername1.Text) ||
                 string.IsNullOrEmpty(RegPass1.Text) || string.IsNullOrEmpty(RegRTPass1.Text))
             {
@@ -129,13 +65,14 @@ namespace Vehicle_Track_Secure_Parking_System
             {
                 if (!(userExists))
                 {
-                    using (MySqlConnection conn = new MySqlConnection("server=localhost;port=3306;username=root;password=;database=vt_db"))
+                    using (MySqlConnection conn = new MySqlConnection("server=localhost;port=3307;username=root;password=;database=vt_db"))
                     {
                         conn.Open();
-                        string iquery = "INSERT INTO vt_db.personal_info (FirstName, MiddleName, LastName, Gender, Birthday, EMail, Username, Password)" +
-                                        " VALUES (@FirstName, @MiddleName, @LastName, @Gender, @Birthday, @EMail, @Username, @Password)";
+                        string iquery = "INSERT INTO vt_db.personal_info (Role,FirstName, MiddleName, LastName, Gender, Birthday, EMail, Username, Password)" +
+                                        " VALUES (@Role, @FirstName, @MiddleName, @LastName, @Gender, @Birthday, @EMail, @Username, @Password)";
 
                         MySqlCommand command = new MySqlCommand(iquery, conn);
+                        command.Parameters.AddWithValue("@Role", RoleCmb.SelectedItem.ToString());
                         command.Parameters.AddWithValue("@FirstName", RegFName.Text);
                         command.Parameters.AddWithValue("@MiddleName", RegMidName.Text);
                         command.Parameters.AddWithValue("@LastName", RegLName.Text);
@@ -154,15 +91,11 @@ namespace Vehicle_Track_Secure_Parking_System
             {
                 MessageBox.Show("Account Creation Successful!");
                 this.Hide();
+                LoginForm loginForm = new LoginForm();
+                loginForm.Show();
                 connection.Close();
             }
 
-
-        }
-
-        private void StartFormClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void BtnAdminHistory_Click(object sender, EventArgs e)
@@ -174,9 +107,10 @@ namespace Vehicle_Track_Secure_Parking_System
 
         private void ReviewInfoBtn_Click(object sender, EventArgs e)
         {
+            role = RoleCmb.Text;
             firstName = RegFName.Text;
             midName = RegMidName.Text;
-            lastName = RegMidName.Text;
+            lastName = RegLName.Text;
             gender = GenderCmb.Text;
             birthday = RegDateTimePicker.Text;
             email = RegEmail1.Text;
@@ -209,6 +143,11 @@ namespace Vehicle_Track_Secure_Parking_System
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }  
 }

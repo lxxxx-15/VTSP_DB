@@ -36,7 +36,6 @@ namespace Vehicle_Track_Secure_Parking_System
             this.ReviewEmail = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ReviewBirthday = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ReviewGender = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.ReviewInfoClose = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.ReviewFName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ReviewLUsername = new System.Windows.Forms.Label();
@@ -58,6 +57,8 @@ namespace Vehicle_Track_Secure_Parking_System
             this.ReviewOkButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.ReviewRole = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.ReviewLabelRole = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -119,28 +120,12 @@ namespace Vehicle_Track_Secure_Parking_System
             this.ReviewGender.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ReviewGender.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.ReviewGender.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.ReviewGender.Location = new System.Drawing.Point(286, 198);
+            this.ReviewGender.Location = new System.Drawing.Point(298, 260);
             this.ReviewGender.Name = "ReviewGender";
             this.ReviewGender.Size = new System.Drawing.Size(132, 27);
             this.ReviewGender.TabIndex = 133;
             this.ReviewGender.Text = null;
             this.ReviewGender.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // ReviewInfoClose
-            // 
-            this.ReviewInfoClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.ReviewInfoClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.ReviewInfoClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.ReviewInfoClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.ReviewInfoClose.FillColor = System.Drawing.Color.Goldenrod;
-            this.ReviewInfoClose.Font = new System.Drawing.Font("Showcard Gothic", 14.25F);
-            this.ReviewInfoClose.ForeColor = System.Drawing.Color.White;
-            this.ReviewInfoClose.Location = new System.Drawing.Point(811, 94);
-            this.ReviewInfoClose.Name = "ReviewInfoClose";
-            this.ReviewInfoClose.Size = new System.Drawing.Size(43, 44);
-            this.ReviewInfoClose.TabIndex = 136;
-            this.ReviewInfoClose.Text = "X";
-            this.ReviewInfoClose.Click += new System.EventHandler(this.ReviewInfoClose_Click);
             // 
             // guna2PictureBox1
             // 
@@ -210,12 +195,13 @@ namespace Vehicle_Track_Secure_Parking_System
             this.ReviewLabelGender.AutoSize = true;
             this.ReviewLabelGender.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReviewLabelGender.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.ReviewLabelGender.Location = new System.Drawing.Point(258, 171);
+            this.ReviewLabelGender.Location = new System.Drawing.Point(282, 240);
             this.ReviewLabelGender.Name = "ReviewLabelGender";
             this.ReviewLabelGender.Size = new System.Drawing.Size(57, 17);
             this.ReviewLabelGender.TabIndex = 128;
             this.ReviewLabelGender.Text = "Gender:";
             this.ReviewLabelGender.UseWaitCursor = true;
+            this.ReviewLabelGender.Click += new System.EventHandler(this.ReviewLabelGender_Click);
             // 
             // ReviewLblFName
             // 
@@ -270,6 +256,8 @@ namespace Vehicle_Track_Secure_Parking_System
             this.guna2GradientPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.guna2GradientPanel1.BorderRadius = 15;
             this.guna2GradientPanel1.BorderThickness = 2;
+            this.guna2GradientPanel1.Controls.Add(this.ReviewLabelRole);
+            this.guna2GradientPanel1.Controls.Add(this.ReviewRole);
             this.guna2GradientPanel1.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2GradientPanel1.Controls.Add(this.ReviewLblLName);
             this.guna2GradientPanel1.Controls.Add(this.ReviewLblMidName);
@@ -464,6 +452,32 @@ namespace Vehicle_Track_Secure_Parking_System
             this.guna2ImageButton1.TabIndex = 148;
             this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
+            // ReviewRole
+            // 
+            this.ReviewRole.AutoSize = false;
+            this.ReviewRole.BackColor = System.Drawing.Color.White;
+            this.ReviewRole.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ReviewRole.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ReviewRole.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.ReviewRole.Location = new System.Drawing.Point(298, 198);
+            this.ReviewRole.Name = "ReviewRole";
+            this.ReviewRole.Size = new System.Drawing.Size(132, 27);
+            this.ReviewRole.TabIndex = 142;
+            this.ReviewRole.Text = null;
+            this.ReviewRole.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // ReviewLabelRole
+            // 
+            this.ReviewLabelRole.AutoSize = true;
+            this.ReviewLabelRole.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReviewLabelRole.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.ReviewLabelRole.Location = new System.Drawing.Point(282, 167);
+            this.ReviewLabelRole.Name = "ReviewLabelRole";
+            this.ReviewLabelRole.Size = new System.Drawing.Size(39, 17);
+            this.ReviewLabelRole.TabIndex = 143;
+            this.ReviewLabelRole.Text = "Role:\r\n";
+            this.ReviewLabelRole.UseWaitCursor = true;
+            // 
             // ReviewInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -476,7 +490,6 @@ namespace Vehicle_Track_Secure_Parking_System
             this.Controls.Add(this.BtnAdminLogout);
             this.Controls.Add(this.BtnAdminHistory);
             this.Controls.Add(this.BtnAdminMainForm);
-            this.Controls.Add(this.ReviewInfoClose);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.StartFormClose);
             this.Controls.Add(this.guna2GradientPanel1);
@@ -497,7 +510,6 @@ namespace Vehicle_Track_Secure_Parking_System
         #endregion
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private Guna.UI2.WinForms.Guna2Button ReviewInfoClose;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Button BtnAdminLogout;
         private Guna.UI2.WinForms.Guna2Button StartFormClose;
@@ -523,5 +535,7 @@ namespace Vehicle_Track_Secure_Parking_System
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+        private System.Windows.Forms.Label ReviewLabelRole;
+        private Guna.UI2.WinForms.Guna2HtmlLabel ReviewRole;
     }
 }

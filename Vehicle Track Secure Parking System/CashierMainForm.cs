@@ -13,7 +13,7 @@ namespace Vehicle_Track_Secure_Parking_System
 {
     public partial class CashierMainForm : Form
     {
-        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;database=vt_db");
+        MySqlConnection connection = new MySqlConnection("server=localhost;port=3307;username=root;password=;database=vt_db");
 
         private int seconds = 0;
 
@@ -39,7 +39,7 @@ namespace Vehicle_Track_Secure_Parking_System
             TimeInBtnn.Text = timeSpan.ToString(@"hh\:mm\:ss");
 
             seconds++;
-            UpdateTime();
+            //UpdateTime();
 
 
             try
@@ -50,7 +50,7 @@ namespace Vehicle_Track_Secure_Parking_System
                 CashierDataGridView.Rows[n].Cells[2].Value = CmbModel.SelectedItem.ToString();
                 CashierDataGridView.Rows[n].Cells[3].Value = TimeInBtnn.Text;
 
-                string connectionString = "server=localhost;port=3306;username=root;password=;database=vt_db";
+                string connectionString = "server=localhost;port=3307;username=root;password=;database=vt_db";
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
