@@ -114,12 +114,6 @@
     <Compile Include="AdminProfile.Designer.cs">
       <DependentUpon>AdminProfile.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminArchiveForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdminArchiveForm.Designer.cs">
-      <DependentUpon>AdminArchiveForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="CashierMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,9 +179,6 @@
     <EmbeddedResource Include="AdminProfile.resx">
       <DependentUpon>AdminProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminArchiveForm.resx">
-      <DependentUpon>AdminArchiveForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CashierMainForm.resx">
       <DependentUpon>CashierMainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminMainForm.resx">
       <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecoverPassForm.resx">
+      <DependentUpon>RecoverPassForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegForm.resx">
       <DependentUpon>RegForm.cs</DependentUpon>
@@ -224,6 +218,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

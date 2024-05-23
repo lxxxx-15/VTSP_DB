@@ -30,11 +30,11 @@ namespace Vehicle_Track_Secure_Parking_System
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CashierMainForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CashierMainForm));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -42,9 +42,9 @@ namespace Vehicle_Track_Secure_Parking_System
             this.LblPlateNumber = new System.Windows.Forms.Label();
             this.TxtBxPlate = new Guna.UI2.WinForms.Guna2TextBox();
             this.LblVehicleType = new System.Windows.Forms.Label();
-            this.Client1 = new Guna.UI2.WinForms.Guna2TabControl();
-            this.CashiersClient = new System.Windows.Forms.TabPage();
-            this.PaymentLabel = new System.Windows.Forms.Label();
+            this.TxtBxOthers = new Guna.UI2.WinForms.Guna2TextBox();
+            this.CmbModel = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.CmbType = new Guna.UI2.WinForms.Guna2ComboBox();
             this.TimeOutbtn = new Guna.UI2.WinForms.Guna2Button();
             this.LblPayment = new System.Windows.Forms.Label();
             this.LblDuration = new System.Windows.Forms.Label();
@@ -53,46 +53,39 @@ namespace Vehicle_Track_Secure_Parking_System
             this.LabelTimeIn = new System.Windows.Forms.Label();
             this.Label01 = new System.Windows.Forms.Label();
             this.TxtbxDuration = new Guna.UI2.WinForms.Guna2TextBox();
-            this.TxtBxOthers = new Guna.UI2.WinForms.Guna2TextBox();
             this.LblOthers = new System.Windows.Forms.Label();
             this.LblVehicleModel = new System.Windows.Forms.Label();
-            this.Client2 = new System.Windows.Forms.TabPage();
-            this.AddBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.PaymentBtn = new Guna.UI2.WinForms.Guna2Button();
             this.CashierDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.PlateNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VehicleType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VehicleModel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Others = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TimeIn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TimeInn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TimeOut = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Duration = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Payment = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Archive = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.LabelPayment2 = new System.Windows.Forms.Label();
+            this.DateToday = new System.Windows.Forms.Label();
+            this.DayToday = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.LblPayment2 = new System.Windows.Forms.Label();
-            this.LblDuration2 = new System.Windows.Forms.Label();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.Label04 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.Label03 = new System.Windows.Forms.Label();
-            this.TxtBxDuration2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.TxtBxOthers2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.LblModel2 = new System.Windows.Forms.Label();
-            this.TxtBxModel2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.LblPlateNumber2 = new System.Windows.Forms.Label();
-            this.TxtBxType2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.TxtBxPlate2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.LblType2 = new System.Windows.Forms.Label();
-            this.CmbType = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.CmbModel = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            this.Client1.SuspendLayout();
-            this.CashiersClient.SuspendLayout();
-            this.Client2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CashierDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -109,7 +102,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.guna2PictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(884, 53);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(900, 53);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 75;
             this.guna2PictureBox1.TabStop = false;
@@ -123,7 +116,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(50, 50);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(824, 0);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(840, 0);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.guna2ImageButton1.Size = new System.Drawing.Size(60, 53);
@@ -144,7 +137,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.CashierForm.FillColor = System.Drawing.Color.DarkOrange;
             this.CashierForm.Font = new System.Drawing.Font("Cooper Black", 12F);
             this.CashierForm.ForeColor = System.Drawing.Color.White;
-            this.CashierForm.Location = new System.Drawing.Point(-53, 59);
+            this.CashierForm.Location = new System.Drawing.Point(-55, 80);
             this.CashierForm.Name = "CashierForm";
             this.CashierForm.Size = new System.Drawing.Size(324, 67);
             this.CashierForm.TabIndex = 150;
@@ -156,7 +149,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.LblPlateNumber.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.LblPlateNumber.ForeColor = System.Drawing.Color.DodgerBlue;
             this.LblPlateNumber.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LblPlateNumber.Location = new System.Drawing.Point(6, 3);
+            this.LblPlateNumber.Location = new System.Drawing.Point(69, 152);
             this.LblPlateNumber.Name = "LblPlateNumber";
             this.LblPlateNumber.Size = new System.Drawing.Size(98, 17);
             this.LblPlateNumber.TabIndex = 152;
@@ -175,9 +168,11 @@ namespace Vehicle_Track_Secure_Parking_System
             this.TxtBxPlate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TxtBxPlate.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TxtBxPlate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtBxPlate.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.TxtBxPlate.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBxPlate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.TxtBxPlate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtBxPlate.Location = new System.Drawing.Point(39, 23);
+            this.TxtBxPlate.Location = new System.Drawing.Point(72, 173);
+            this.TxtBxPlate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TxtBxPlate.Name = "TxtBxPlate";
             this.TxtBxPlate.PasswordChar = '\0';
             this.TxtBxPlate.PlaceholderText = "";
@@ -191,81 +186,106 @@ namespace Vehicle_Track_Secure_Parking_System
             this.LblVehicleType.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.LblVehicleType.ForeColor = System.Drawing.Color.DodgerBlue;
             this.LblVehicleType.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LblVehicleType.Location = new System.Drawing.Point(6, 62);
+            this.LblVehicleType.Location = new System.Drawing.Point(69, 213);
             this.LblVehicleType.Name = "LblVehicleType";
             this.LblVehicleType.Size = new System.Drawing.Size(89, 17);
             this.LblVehicleType.TabIndex = 153;
             this.LblVehicleType.Text = "Vehicle Type:";
             // 
-            // Client1
+            // TxtBxOthers
             // 
-            this.Client1.Alignment = System.Windows.Forms.TabAlignment.Left;
-            this.Client1.Controls.Add(this.CashiersClient);
-            this.Client1.Controls.Add(this.Client2);
-            this.Client1.ItemSize = new System.Drawing.Size(180, 40);
-            this.Client1.Location = new System.Drawing.Point(12, 149);
-            this.Client1.Name = "Client1";
-            this.Client1.SelectedIndex = 0;
-            this.Client1.Size = new System.Drawing.Size(394, 446);
-            this.Client1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
-            this.Client1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.Client1.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.Client1.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
-            this.Client1.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.Client1.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
-            this.Client1.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.Client1.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.Client1.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
-            this.Client1.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.Client1.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
-            this.Client1.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.Client1.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.Client1.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
-            this.Client1.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
-            this.Client1.TabButtonSize = new System.Drawing.Size(180, 40);
-            this.Client1.TabIndex = 157;
-            this.Client1.TabMenuBackColor = System.Drawing.SystemColors.ScrollBar;
+            this.TxtBxOthers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.TxtBxOthers.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.TxtBxOthers.BorderRadius = 15;
+            this.TxtBxOthers.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBxOthers.DefaultText = "";
+            this.TxtBxOthers.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TxtBxOthers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TxtBxOthers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtBxOthers.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtBxOthers.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TxtBxOthers.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.TxtBxOthers.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TxtBxOthers.Location = new System.Drawing.Point(72, 347);
+            this.TxtBxOthers.Name = "TxtBxOthers";
+            this.TxtBxOthers.PasswordChar = '\0';
+            this.TxtBxOthers.PlaceholderText = "";
+            this.TxtBxOthers.SelectedText = "";
+            this.TxtBxOthers.Size = new System.Drawing.Size(126, 28);
+            this.TxtBxOthers.TabIndex = 158;
+            this.TxtBxOthers.TextChanged += new System.EventHandler(this.TxtBxOthers_TextChanged);
             // 
-            // CashiersClient
+            // CmbModel
             // 
-            this.CashiersClient.BackColor = System.Drawing.Color.Cornsilk;
-            this.CashiersClient.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.CashiersClient.Controls.Add(this.CmbModel);
-            this.CashiersClient.Controls.Add(this.CmbType);
-            this.CashiersClient.Controls.Add(this.PaymentLabel);
-            this.CashiersClient.Controls.Add(this.TimeOutbtn);
-            this.CashiersClient.Controls.Add(this.LblPayment);
-            this.CashiersClient.Controls.Add(this.LblDuration);
-            this.CashiersClient.Controls.Add(this.TimeInBtnn);
-            this.CashiersClient.Controls.Add(this.Label02);
-            this.CashiersClient.Controls.Add(this.LabelTimeIn);
-            this.CashiersClient.Controls.Add(this.Label01);
-            this.CashiersClient.Controls.Add(this.TxtbxDuration);
-            this.CashiersClient.Controls.Add(this.TxtBxOthers);
-            this.CashiersClient.Controls.Add(this.LblOthers);
-            this.CashiersClient.Controls.Add(this.LblVehicleModel);
-            this.CashiersClient.Controls.Add(this.LblPlateNumber);
-            this.CashiersClient.Controls.Add(this.TxtBxPlate);
-            this.CashiersClient.Controls.Add(this.LblVehicleType);
-            this.CashiersClient.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.CashiersClient.Location = new System.Drawing.Point(184, 4);
-            this.CashiersClient.Name = "CashiersClient";
-            this.CashiersClient.Padding = new System.Windows.Forms.Padding(3);
-            this.CashiersClient.Size = new System.Drawing.Size(206, 438);
-            this.CashiersClient.TabIndex = 0;
-            this.CashiersClient.Text = "Client 1";
+            this.CmbModel.BackColor = System.Drawing.Color.Transparent;
+            this.CmbModel.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.CmbModel.BorderRadius = 15;
+            this.CmbModel.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CmbModel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbModel.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CmbModel.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CmbModel.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.CmbModel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.CmbModel.ItemHeight = 30;
+            this.CmbModel.Items.AddRange(new object[] {
+            "BMW",
+            "BMW Motorrad",
+            "Chevrolet",
+            "Ducati",
+            "Ford",
+            "Ford Trucks",
+            "Foton",
+            "Harley-Davidson",
+            "Hino",
+            "Honda",
+            "Hyundai",
+            "Hyundai Trucks",
+            "Isuzu",
+            "Kawasaki",
+            "Kia",
+            "Mazda",
+            "Mercedes-Benz",
+            "Mercedes-Benz Trucks",
+            "Mitsubishi",
+            "Mitsubishi Fuso",
+            "Nissan",
+            "Nissan Diesel",
+            "Subaru",
+            "Suzuki",
+            "Tata",
+            "Toyota",
+            "Vespa",
+            "Volkswagen",
+            "Volvo Trucks",
+            "Yamaha"});
+            this.CmbModel.Location = new System.Drawing.Point(72, 292);
+            this.CmbModel.Name = "CmbModel";
+            this.CmbModel.Size = new System.Drawing.Size(148, 36);
+            this.CmbModel.Sorted = true;
+            this.CmbModel.TabIndex = 171;
+            this.CmbModel.SelectedIndexChanged += new System.EventHandler(this.CmbModel_SelectedIndexChanged);
             // 
-            // PaymentLabel
+            // CmbType
             // 
-            this.PaymentLabel.AutoSize = true;
-            this.PaymentLabel.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PaymentLabel.ForeColor = System.Drawing.Color.Black;
-            this.PaymentLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.PaymentLabel.Location = new System.Drawing.Point(50, 396);
-            this.PaymentLabel.Name = "PaymentLabel";
-            this.PaymentLabel.Size = new System.Drawing.Size(104, 24);
-            this.PaymentLabel.TabIndex = 167;
-            this.PaymentLabel.Text = "Payment";
+            this.CmbType.BackColor = System.Drawing.Color.Transparent;
+            this.CmbType.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.CmbType.BorderRadius = 15;
+            this.CmbType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CmbType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CmbType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CmbType.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.CmbType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.CmbType.ItemHeight = 30;
+            this.CmbType.Items.AddRange(new object[] {
+            "2 wheels",
+            "3 wheels",
+            "4 wheels",
+            "6 or more wheels"});
+            this.CmbType.Location = new System.Drawing.Point(72, 233);
+            this.CmbType.Name = "CmbType";
+            this.CmbType.Size = new System.Drawing.Size(148, 36);
+            this.CmbType.TabIndex = 170;
             // 
             // TimeOutbtn
             // 
@@ -282,12 +302,12 @@ namespace Vehicle_Track_Secure_Parking_System
             this.TimeOutbtn.FocusedColor = System.Drawing.Color.Transparent;
             this.TimeOutbtn.Font = new System.Drawing.Font("Cooper Black", 12F);
             this.TimeOutbtn.ForeColor = System.Drawing.Color.White;
-            this.TimeOutbtn.Location = new System.Drawing.Point(39, 281);
+            this.TimeOutbtn.Location = new System.Drawing.Point(72, 457);
             this.TimeOutbtn.Name = "TimeOutbtn";
-            this.TimeOutbtn.Size = new System.Drawing.Size(138, 34);
+            this.TimeOutbtn.Size = new System.Drawing.Size(148, 34);
             this.TimeOutbtn.TabIndex = 169;
             this.TimeOutbtn.Text = "Time Out";
-            this.TimeOutbtn.Click += new System.EventHandler(this.Add_Click);
+            this.TimeOutbtn.Click += new System.EventHandler(this.TimeOutbtn_Click);
             // 
             // LblPayment
             // 
@@ -295,7 +315,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.LblPayment.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.LblPayment.ForeColor = System.Drawing.Color.DodgerBlue;
             this.LblPayment.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LblPayment.Location = new System.Drawing.Point(6, 379);
+            this.LblPayment.Location = new System.Drawing.Point(69, 555);
             this.LblPayment.Name = "LblPayment";
             this.LblPayment.Size = new System.Drawing.Size(66, 17);
             this.LblPayment.TabIndex = 166;
@@ -307,7 +327,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.LblDuration.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.LblDuration.ForeColor = System.Drawing.Color.DodgerBlue;
             this.LblDuration.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LblDuration.Location = new System.Drawing.Point(6, 318);
+            this.LblDuration.Location = new System.Drawing.Point(69, 494);
             this.LblDuration.Name = "LblDuration";
             this.LblDuration.Size = new System.Drawing.Size(67, 17);
             this.LblDuration.TabIndex = 165;
@@ -326,14 +346,14 @@ namespace Vehicle_Track_Secure_Parking_System
             this.TimeInBtnn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.TimeInBtnn.FillColor = System.Drawing.Color.Orange;
             this.TimeInBtnn.FocusedColor = System.Drawing.Color.Transparent;
-            this.TimeInBtnn.Font = new System.Drawing.Font("Cooper Black", 12F);
+            this.TimeInBtnn.Font = new System.Drawing.Font("Cooper Black", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TimeInBtnn.ForeColor = System.Drawing.Color.White;
-            this.TimeInBtnn.Location = new System.Drawing.Point(153, 237);
+            this.TimeInBtnn.Location = new System.Drawing.Point(204, 395);
             this.TimeInBtnn.Name = "TimeInBtnn";
-            this.TimeInBtnn.Size = new System.Drawing.Size(48, 31);
+            this.TimeInBtnn.Size = new System.Drawing.Size(92, 31);
             this.TimeInBtnn.TabIndex = 164;
-            this.TimeInBtnn.Text = "In";
-            this.TimeInBtnn.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.TimeInBtnn.Text = "Time In";
+            this.TimeInBtnn.Click += new System.EventHandler(this.TimeInBtnn_Click);
             // 
             // Label02
             // 
@@ -341,7 +361,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.Label02.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.Label02.ForeColor = System.Drawing.Color.DodgerBlue;
             this.Label02.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Label02.Location = new System.Drawing.Point(6, 261);
+            this.Label02.Location = new System.Drawing.Point(69, 437);
             this.Label02.Name = "Label02";
             this.Label02.Size = new System.Drawing.Size(59, 17);
             this.Label02.TabIndex = 162;
@@ -353,11 +373,12 @@ namespace Vehicle_Track_Secure_Parking_System
             this.LabelTimeIn.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelTimeIn.ForeColor = System.Drawing.Color.Black;
             this.LabelTimeIn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LabelTimeIn.Location = new System.Drawing.Point(50, 237);
+            this.LabelTimeIn.Location = new System.Drawing.Point(85, 402);
             this.LabelTimeIn.Name = "LabelTimeIn";
             this.LabelTimeIn.Size = new System.Drawing.Size(97, 24);
             this.LabelTimeIn.TabIndex = 161;
             this.LabelTimeIn.Text = "Time In:";
+            this.LabelTimeIn.Click += new System.EventHandler(this.LabelTimeIn_Tick);
             // 
             // Label01
             // 
@@ -365,7 +386,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.Label01.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.Label01.ForeColor = System.Drawing.Color.DodgerBlue;
             this.Label01.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Label01.Location = new System.Drawing.Point(6, 220);
+            this.Label01.Location = new System.Drawing.Point(69, 378);
             this.Label01.Name = "Label01";
             this.Label01.Size = new System.Drawing.Size(59, 17);
             this.Label01.TabIndex = 160;
@@ -383,37 +404,16 @@ namespace Vehicle_Track_Secure_Parking_System
             this.TxtbxDuration.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TxtbxDuration.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TxtbxDuration.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtbxDuration.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.TxtbxDuration.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.TxtbxDuration.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtbxDuration.Location = new System.Drawing.Point(39, 338);
+            this.TxtbxDuration.Location = new System.Drawing.Point(72, 513);
+            this.TxtbxDuration.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TxtbxDuration.Name = "TxtbxDuration";
             this.TxtbxDuration.PasswordChar = '\0';
             this.TxtbxDuration.PlaceholderText = "";
             this.TxtbxDuration.SelectedText = "";
-            this.TxtbxDuration.Size = new System.Drawing.Size(148, 36);
+            this.TxtbxDuration.Size = new System.Drawing.Size(148, 38);
             this.TxtbxDuration.TabIndex = 159;
-            // 
-            // TxtBxOthers
-            // 
-            this.TxtBxOthers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.TxtBxOthers.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.TxtBxOthers.BorderRadius = 15;
-            this.TxtBxOthers.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBxOthers.DefaultText = "";
-            this.TxtBxOthers.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TxtBxOthers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TxtBxOthers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtBxOthers.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtBxOthers.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtBxOthers.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TxtBxOthers.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtBxOthers.Location = new System.Drawing.Point(91, 196);
-            this.TxtBxOthers.Name = "TxtBxOthers";
-            this.TxtBxOthers.PasswordChar = '\0';
-            this.TxtBxOthers.PlaceholderText = "";
-            this.TxtBxOthers.SelectedText = "";
-            this.TxtBxOthers.Size = new System.Drawing.Size(96, 28);
-            this.TxtBxOthers.TabIndex = 158;
             // 
             // LblOthers
             // 
@@ -421,7 +421,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.LblOthers.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblOthers.ForeColor = System.Drawing.Color.DodgerBlue;
             this.LblOthers.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LblOthers.Location = new System.Drawing.Point(51, 180);
+            this.LblOthers.Location = new System.Drawing.Point(114, 331);
             this.LblOthers.Name = "LblOthers";
             this.LblOthers.Size = new System.Drawing.Size(126, 13);
             this.LblOthers.TabIndex = 157;
@@ -433,72 +433,46 @@ namespace Vehicle_Track_Secure_Parking_System
             this.LblVehicleModel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.LblVehicleModel.ForeColor = System.Drawing.Color.DodgerBlue;
             this.LblVehicleModel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LblVehicleModel.Location = new System.Drawing.Point(6, 121);
+            this.LblVehicleModel.Location = new System.Drawing.Point(69, 272);
             this.LblVehicleModel.Name = "LblVehicleModel";
             this.LblVehicleModel.Size = new System.Drawing.Size(99, 17);
             this.LblVehicleModel.TabIndex = 156;
             this.LblVehicleModel.Text = "Vehicle Model:";
             // 
-            // Client2
+            // PaymentBtn
             // 
-            this.Client2.BackColor = System.Drawing.Color.Cornsilk;
-            this.Client2.Controls.Add(this.LabelPayment2);
-            this.Client2.Controls.Add(this.guna2Button2);
-            this.Client2.Controls.Add(this.LblPayment2);
-            this.Client2.Controls.Add(this.LblDuration2);
-            this.Client2.Controls.Add(this.guna2Button3);
-            this.Client2.Controls.Add(this.Label04);
-            this.Client2.Controls.Add(this.label5);
-            this.Client2.Controls.Add(this.Label03);
-            this.Client2.Controls.Add(this.TxtBxDuration2);
-            this.Client2.Controls.Add(this.TxtBxOthers2);
-            this.Client2.Controls.Add(this.label7);
-            this.Client2.Controls.Add(this.LblModel2);
-            this.Client2.Controls.Add(this.TxtBxModel2);
-            this.Client2.Controls.Add(this.LblPlateNumber2);
-            this.Client2.Controls.Add(this.TxtBxType2);
-            this.Client2.Controls.Add(this.TxtBxPlate2);
-            this.Client2.Controls.Add(this.LblType2);
-            this.Client2.Location = new System.Drawing.Point(184, 4);
-            this.Client2.Name = "Client2";
-            this.Client2.Padding = new System.Windows.Forms.Padding(3);
-            this.Client2.Size = new System.Drawing.Size(206, 438);
-            this.Client2.TabIndex = 1;
-            this.Client2.Text = "Client 2";
-            // 
-            // AddBtn
-            // 
-            this.AddBtn.BackColor = System.Drawing.Color.Transparent;
-            this.AddBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.AddBtn.BorderColor = System.Drawing.Color.AliceBlue;
-            this.AddBtn.BorderRadius = 15;
-            this.AddBtn.BorderThickness = 1;
-            this.AddBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.AddBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.AddBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.AddBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.AddBtn.FillColor = System.Drawing.Color.LimeGreen;
-            this.AddBtn.FocusedColor = System.Drawing.Color.Transparent;
-            this.AddBtn.Font = new System.Drawing.Font("Cooper Black", 12F);
-            this.AddBtn.ForeColor = System.Drawing.Color.White;
-            this.AddBtn.Location = new System.Drawing.Point(471, 561);
-            this.AddBtn.Name = "AddBtn";
-            this.AddBtn.Size = new System.Drawing.Size(114, 35);
-            this.AddBtn.TabIndex = 163;
-            this.AddBtn.Text = "Add";
+            this.PaymentBtn.BackColor = System.Drawing.Color.Transparent;
+            this.PaymentBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.PaymentBtn.BorderColor = System.Drawing.Color.AliceBlue;
+            this.PaymentBtn.BorderRadius = 15;
+            this.PaymentBtn.BorderThickness = 1;
+            this.PaymentBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.PaymentBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.PaymentBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.PaymentBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.PaymentBtn.FillColor = System.Drawing.Color.LimeGreen;
+            this.PaymentBtn.FocusedColor = System.Drawing.Color.Transparent;
+            this.PaymentBtn.Font = new System.Drawing.Font("Cooper Black", 12F);
+            this.PaymentBtn.ForeColor = System.Drawing.Color.White;
+            this.PaymentBtn.Location = new System.Drawing.Point(72, 578);
+            this.PaymentBtn.Name = "PaymentBtn";
+            this.PaymentBtn.Size = new System.Drawing.Size(224, 36);
+            this.PaymentBtn.TabIndex = 163;
+            this.PaymentBtn.Text = "Payment";
+            this.PaymentBtn.Click += new System.EventHandler(this.PaymentBtn_Click);
             // 
             // CashierDataGridView
             // 
             this.CashierDataGridView.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.CashierDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -510,21 +484,20 @@ namespace Vehicle_Track_Secure_Parking_System
             this.PlateNumber,
             this.VehicleType,
             this.VehicleModel,
-            this.Others,
-            this.TimeIn,
+            this.TimeInn,
             this.TimeOut,
             this.Duration,
             this.Payment});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.CashierDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.CashierDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.CashierDataGridView.Location = new System.Drawing.Point(408, 149);
+            this.CashierDataGridView.Location = new System.Drawing.Point(315, 152);
             this.CashierDataGridView.Name = "CashierDataGridView";
             this.CashierDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -537,7 +510,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.CashierDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.CashierDataGridView.RowHeadersVisible = false;
             this.CashierDataGridView.RowTemplate.Height = 24;
-            this.CashierDataGridView.Size = new System.Drawing.Size(464, 398);
+            this.CashierDataGridView.Size = new System.Drawing.Size(573, 420);
             this.CashierDataGridView.TabIndex = 158;
             this.CashierDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.CashierDataGridView.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -580,17 +553,11 @@ namespace Vehicle_Track_Secure_Parking_System
             this.VehicleModel.Name = "VehicleModel";
             this.VehicleModel.ReadOnly = true;
             // 
-            // Others
+            // TimeInn
             // 
-            this.Others.HeaderText = "Others";
-            this.Others.Name = "Others";
-            this.Others.ReadOnly = true;
-            // 
-            // TimeIn
-            // 
-            this.TimeIn.HeaderText = "IN";
-            this.TimeIn.Name = "TimeIn";
-            this.TimeIn.ReadOnly = true;
+            this.TimeInn.HeaderText = "IN";
+            this.TimeInn.Name = "TimeInn";
+            this.TimeInn.ReadOnly = true;
             // 
             // TimeOut
             // 
@@ -625,11 +592,11 @@ namespace Vehicle_Track_Secure_Parking_System
             this.Archive.FocusedColor = System.Drawing.Color.Transparent;
             this.Archive.Font = new System.Drawing.Font("Cooper Black", 12F);
             this.Archive.ForeColor = System.Drawing.Color.White;
-            this.Archive.Location = new System.Drawing.Point(591, 561);
+            this.Archive.Location = new System.Drawing.Point(493, 578);
             this.Archive.Name = "Archive";
-            this.Archive.Size = new System.Drawing.Size(114, 34);
+            this.Archive.Size = new System.Drawing.Size(177, 34);
             this.Archive.TabIndex = 168;
-            this.Archive.Text = "Archive";
+            this.Archive.Text = "Archive Data";
             this.Archive.Click += new System.EventHandler(this.Archive_Click);
             // 
             // guna2Button1
@@ -647,24 +614,36 @@ namespace Vehicle_Track_Secure_Parking_System
             this.guna2Button1.FocusedColor = System.Drawing.Color.Transparent;
             this.guna2Button1.Font = new System.Drawing.Font("Cooper Black", 12F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(711, 561);
+            this.guna2Button1.Location = new System.Drawing.Point(676, 578);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(161, 34);
             this.guna2Button1.TabIndex = 170;
             this.guna2Button1.Text = "Back to Profile";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
             // 
-            // LabelPayment2
+            // DateToday
             // 
-            this.LabelPayment2.AutoSize = true;
-            this.LabelPayment2.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelPayment2.ForeColor = System.Drawing.Color.Black;
-            this.LabelPayment2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LabelPayment2.Location = new System.Drawing.Point(50, 404);
-            this.LabelPayment2.Name = "LabelPayment2";
-            this.LabelPayment2.Size = new System.Drawing.Size(104, 24);
-            this.LabelPayment2.TabIndex = 185;
-            this.LabelPayment2.Text = "Payment";
+            this.DateToday.AutoSize = true;
+            this.DateToday.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateToday.ForeColor = System.Drawing.Color.Black;
+            this.DateToday.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.DateToday.Location = new System.Drawing.Point(660, 77);
+            this.DateToday.Name = "DateToday";
+            this.DateToday.Size = new System.Drawing.Size(66, 24);
+            this.DateToday.TabIndex = 172;
+            this.DateToday.Text = "Date:";
+            // 
+            // DayToday
+            // 
+            this.DayToday.AutoSize = true;
+            this.DayToday.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DayToday.ForeColor = System.Drawing.Color.Black;
+            this.DayToday.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.DayToday.Location = new System.Drawing.Point(716, 101);
+            this.DayToday.Name = "DayToday";
+            this.DayToday.Size = new System.Drawing.Size(58, 24);
+            this.DayToday.TabIndex = 173;
+            this.DayToday.Text = "Day:";
             // 
             // guna2Button2
             // 
@@ -677,372 +656,158 @@ namespace Vehicle_Track_Secure_Parking_System
             this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.Gold;
+            this.guna2Button2.FillColor = System.Drawing.Color.OrangeRed;
             this.guna2Button2.FocusedColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.Font = new System.Drawing.Font("Cooper Black", 12F);
+            this.guna2Button2.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(39, 289);
+            this.guna2Button2.Location = new System.Drawing.Point(204, 347);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(138, 34);
-            this.guna2Button2.TabIndex = 186;
-            this.guna2Button2.Text = "Time Out";
+            this.guna2Button2.Size = new System.Drawing.Size(92, 31);
+            this.guna2Button2.TabIndex = 174;
+            this.guna2Button2.Text = "Add Model";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
-            // LblPayment2
+            // guna2PictureBox3
             // 
-            this.LblPayment2.AutoSize = true;
-            this.LblPayment2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.LblPayment2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.LblPayment2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LblPayment2.Location = new System.Drawing.Point(6, 387);
-            this.LblPayment2.Name = "LblPayment2";
-            this.LblPayment2.Size = new System.Drawing.Size(66, 17);
-            this.LblPayment2.TabIndex = 184;
-            this.LblPayment2.Text = "Payment:";
+            this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(26, 233);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(40, 36);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox3.TabIndex = 175;
+            this.guna2PictureBox3.TabStop = false;
             // 
-            // LblDuration2
+            // guna2PictureBox2
             // 
-            this.LblDuration2.AutoSize = true;
-            this.LblDuration2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.LblDuration2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.LblDuration2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LblDuration2.Location = new System.Drawing.Point(6, 326);
-            this.LblDuration2.Name = "LblDuration2";
-            this.LblDuration2.Size = new System.Drawing.Size(67, 17);
-            this.LblDuration2.TabIndex = 183;
-            this.LblDuration2.Text = "Duration:";
+            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(26, 173);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(40, 36);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox2.TabIndex = 176;
+            this.guna2PictureBox2.TabStop = false;
             // 
-            // guna2Button3
+            // guna2PictureBox4
             // 
-            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.guna2Button3.BorderColor = System.Drawing.Color.AliceBlue;
-            this.guna2Button3.BorderRadius = 15;
-            this.guna2Button3.BorderThickness = 1;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.Orange;
-            this.guna2Button3.FocusedColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.Font = new System.Drawing.Font("Cooper Black", 12F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(153, 245);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(48, 31);
-            this.guna2Button3.TabIndex = 182;
-            this.guna2Button3.Text = "In";
+            this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
+            this.guna2PictureBox4.ImageRotate = 0F;
+            this.guna2PictureBox4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.guna2PictureBox4.Location = new System.Drawing.Point(23, 292);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.Size = new System.Drawing.Size(40, 36);
+            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox4.TabIndex = 177;
+            this.guna2PictureBox4.TabStop = false;
             // 
-            // Label04
+            // guna2PictureBox5
             // 
-            this.Label04.AutoSize = true;
-            this.Label04.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.Label04.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.Label04.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Label04.Location = new System.Drawing.Point(6, 269);
-            this.Label04.Name = "Label04";
-            this.Label04.Size = new System.Drawing.Size(59, 17);
-            this.Label04.TabIndex = 181;
-            this.Label04.Text = "Time In:";
+            this.guna2PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.Image")));
+            this.guna2PictureBox5.ImageRotate = 0F;
+            this.guna2PictureBox5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.guna2PictureBox5.Location = new System.Drawing.Point(23, 395);
+            this.guna2PictureBox5.Name = "guna2PictureBox5";
+            this.guna2PictureBox5.Size = new System.Drawing.Size(40, 36);
+            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox5.TabIndex = 178;
+            this.guna2PictureBox5.TabStop = false;
             // 
-            // label5
+            // guna2PictureBox6
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(50, 245);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 24);
-            this.label5.TabIndex = 180;
-            this.label5.Text = "Time In:";
+            this.guna2PictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox6.Image")));
+            this.guna2PictureBox6.ImageRotate = 0F;
+            this.guna2PictureBox6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.guna2PictureBox6.Location = new System.Drawing.Point(23, 515);
+            this.guna2PictureBox6.Name = "guna2PictureBox6";
+            this.guna2PictureBox6.Size = new System.Drawing.Size(40, 36);
+            this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox6.TabIndex = 179;
+            this.guna2PictureBox6.TabStop = false;
             // 
-            // Label03
+            // guna2PictureBox7
             // 
-            this.Label03.AutoSize = true;
-            this.Label03.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.Label03.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.Label03.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Label03.Location = new System.Drawing.Point(6, 228);
-            this.Label03.Name = "Label03";
-            this.Label03.Size = new System.Drawing.Size(59, 17);
-            this.Label03.TabIndex = 179;
-            this.Label03.Text = "Time In:";
+            this.guna2PictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox7.Image")));
+            this.guna2PictureBox7.ImageRotate = 0F;
+            this.guna2PictureBox7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.guna2PictureBox7.Location = new System.Drawing.Point(23, 576);
+            this.guna2PictureBox7.Name = "guna2PictureBox7";
+            this.guna2PictureBox7.Size = new System.Drawing.Size(40, 36);
+            this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox7.TabIndex = 180;
+            this.guna2PictureBox7.TabStop = false;
             // 
-            // TxtBxDuration2
+            // guna2PictureBox8
             // 
-            this.TxtBxDuration2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.TxtBxDuration2.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.TxtBxDuration2.BorderRadius = 15;
-            this.TxtBxDuration2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBxDuration2.DefaultText = "";
-            this.TxtBxDuration2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TxtBxDuration2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TxtBxDuration2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtBxDuration2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtBxDuration2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtBxDuration2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TxtBxDuration2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtBxDuration2.Location = new System.Drawing.Point(39, 346);
-            this.TxtBxDuration2.Name = "TxtBxDuration2";
-            this.TxtBxDuration2.PasswordChar = '\0';
-            this.TxtBxDuration2.PlaceholderText = "";
-            this.TxtBxDuration2.SelectedText = "";
-            this.TxtBxDuration2.Size = new System.Drawing.Size(148, 36);
-            this.TxtBxDuration2.TabIndex = 178;
-            // 
-            // TxtBxOthers2
-            // 
-            this.TxtBxOthers2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.TxtBxOthers2.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.TxtBxOthers2.BorderRadius = 15;
-            this.TxtBxOthers2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBxOthers2.DefaultText = "";
-            this.TxtBxOthers2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TxtBxOthers2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TxtBxOthers2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtBxOthers2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtBxOthers2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtBxOthers2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TxtBxOthers2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtBxOthers2.Location = new System.Drawing.Point(91, 204);
-            this.TxtBxOthers2.Name = "TxtBxOthers2";
-            this.TxtBxOthers2.PasswordChar = '\0';
-            this.TxtBxOthers2.PlaceholderText = "";
-            this.TxtBxOthers2.SelectedText = "";
-            this.TxtBxOthers2.Size = new System.Drawing.Size(96, 28);
-            this.TxtBxOthers2.TabIndex = 177;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label7.Location = new System.Drawing.Point(51, 188);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(126, 13);
-            this.label7.TabIndex = 176;
-            this.label7.Text = "Others (Please Specify):";
-            // 
-            // LblModel2
-            // 
-            this.LblModel2.AutoSize = true;
-            this.LblModel2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.LblModel2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.LblModel2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LblModel2.Location = new System.Drawing.Point(6, 129);
-            this.LblModel2.Name = "LblModel2";
-            this.LblModel2.Size = new System.Drawing.Size(99, 17);
-            this.LblModel2.TabIndex = 175;
-            this.LblModel2.Text = "Vehicle Model:";
-            // 
-            // TxtBxModel2
-            // 
-            this.TxtBxModel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.TxtBxModel2.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.TxtBxModel2.BorderRadius = 15;
-            this.TxtBxModel2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBxModel2.DefaultText = "";
-            this.TxtBxModel2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TxtBxModel2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TxtBxModel2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtBxModel2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtBxModel2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtBxModel2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TxtBxModel2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtBxModel2.Location = new System.Drawing.Point(39, 149);
-            this.TxtBxModel2.Name = "TxtBxModel2";
-            this.TxtBxModel2.PasswordChar = '\0';
-            this.TxtBxModel2.PlaceholderText = "";
-            this.TxtBxModel2.SelectedText = "";
-            this.TxtBxModel2.Size = new System.Drawing.Size(148, 36);
-            this.TxtBxModel2.TabIndex = 174;
-            this.TxtBxModel2.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
-            // 
-            // LblPlateNumber2
-            // 
-            this.LblPlateNumber2.AutoSize = true;
-            this.LblPlateNumber2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.LblPlateNumber2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.LblPlateNumber2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LblPlateNumber2.Location = new System.Drawing.Point(6, 11);
-            this.LblPlateNumber2.Name = "LblPlateNumber2";
-            this.LblPlateNumber2.Size = new System.Drawing.Size(98, 17);
-            this.LblPlateNumber2.TabIndex = 171;
-            this.LblPlateNumber2.Text = "Plate Number:";
-            // 
-            // TxtBxType2
-            // 
-            this.TxtBxType2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.TxtBxType2.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.TxtBxType2.BorderRadius = 15;
-            this.TxtBxType2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBxType2.DefaultText = "";
-            this.TxtBxType2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TxtBxType2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TxtBxType2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtBxType2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtBxType2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtBxType2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TxtBxType2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtBxType2.Location = new System.Drawing.Point(39, 90);
-            this.TxtBxType2.Name = "TxtBxType2";
-            this.TxtBxType2.PasswordChar = '\0';
-            this.TxtBxType2.PlaceholderText = "";
-            this.TxtBxType2.SelectedText = "";
-            this.TxtBxType2.Size = new System.Drawing.Size(148, 36);
-            this.TxtBxType2.TabIndex = 173;
-            // 
-            // TxtBxPlate2
-            // 
-            this.TxtBxPlate2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.TxtBxPlate2.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.TxtBxPlate2.BorderRadius = 15;
-            this.TxtBxPlate2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBxPlate2.DefaultText = "";
-            this.TxtBxPlate2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TxtBxPlate2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TxtBxPlate2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtBxPlate2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtBxPlate2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtBxPlate2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TxtBxPlate2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtBxPlate2.Location = new System.Drawing.Point(39, 31);
-            this.TxtBxPlate2.Name = "TxtBxPlate2";
-            this.TxtBxPlate2.PasswordChar = '\0';
-            this.TxtBxPlate2.PlaceholderText = "";
-            this.TxtBxPlate2.SelectedText = "";
-            this.TxtBxPlate2.Size = new System.Drawing.Size(148, 36);
-            this.TxtBxPlate2.TabIndex = 170;
-            // 
-            // LblType2
-            // 
-            this.LblType2.AutoSize = true;
-            this.LblType2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.LblType2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.LblType2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LblType2.Location = new System.Drawing.Point(6, 70);
-            this.LblType2.Name = "LblType2";
-            this.LblType2.Size = new System.Drawing.Size(89, 17);
-            this.LblType2.TabIndex = 172;
-            this.LblType2.Text = "Vehicle Type:";
-            // 
-            // CmbType
-            // 
-            this.CmbType.BackColor = System.Drawing.Color.Transparent;
-            this.CmbType.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.CmbType.BorderRadius = 15;
-            this.CmbType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.CmbType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CmbType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CmbType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CmbType.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.CmbType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.CmbType.ItemHeight = 30;
-            this.CmbType.Items.AddRange(new object[] {
-            "2 wheels",
-            "3 wheels",
-            "4 wheels",
-            "6 or More wheels"});
-            this.CmbType.Location = new System.Drawing.Point(39, 82);
-            this.CmbType.Name = "CmbType";
-            this.CmbType.Size = new System.Drawing.Size(148, 36);
-            this.CmbType.TabIndex = 170;
-            // 
-            // CmbModel
-            // 
-            this.CmbModel.BackColor = System.Drawing.Color.Transparent;
-            this.CmbModel.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.CmbModel.BorderRadius = 15;
-            this.CmbModel.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.CmbModel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CmbModel.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CmbModel.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CmbModel.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.CmbModel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.CmbModel.ItemHeight = 30;
-            this.CmbModel.Items.AddRange(new object[] {
-            "1. Audi",
-            "2. BAIC",
-            "3. BMW",
-            "4. BYD",
-            "5. Chery",
-            "6. Chevrolet",
-            "7. Chrysler",
-            "8. Dodge",
-            "9. Dongfeng",
-            "10. Fiat",
-            "11. Ford",
-            "12. Foton",
-            "13. Great Wall",
-            "14. Geely",
-            "15. Haima",
-            "16. Haval",
-            "17. Hino",
-            "18. Honda",
-            "19. Hyundai",
-            "20. Isuzu",
-            "21. Isuzu Giga",
-            "22. Jaguar",
-            "23. JAC",
-            "24. Jeep",
-            "25. Kia",
-            "26. Land Rover",
-            "27. LDV",
-            "28. Lexus",
-            "29. Lifan",
-            "30. MAN",
-            "31. Mahindra",
-            "32. Mazda",
-            "33. Mercedes-Benz",
-            "34. MG",
-            "35. Mini",
-            "36. Mitsubishi",
-            "37. Nissan",
-            "38. Peugeot",
-            "39. Porsche",
-            "40. Scania",
-            "41. Subaru",
-            "42. SsangYong",
-            "43. Suzuki",
-            "44. Tata",
-            "45. Toyota",
-            "46. Volkswagen",
-            "47. Volvo",
-            "48. Volvo Trucks",
-            "49. Zotye",
-            "50. Fuso"});
-            this.CmbModel.Location = new System.Drawing.Point(39, 141);
-            this.CmbModel.Name = "CmbModel";
-            this.CmbModel.Size = new System.Drawing.Size(148, 36);
-            this.CmbModel.TabIndex = 171;
+            this.guna2PictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox8.Image")));
+            this.guna2PictureBox8.ImageRotate = 0F;
+            this.guna2PictureBox8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.guna2PictureBox8.Location = new System.Drawing.Point(23, 455);
+            this.guna2PictureBox8.Name = "guna2PictureBox8";
+            this.guna2PictureBox8.Size = new System.Drawing.Size(40, 36);
+            this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox8.TabIndex = 181;
+            this.guna2PictureBox8.TabStop = false;
             // 
             // CashierMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.ClientSize = new System.Drawing.Size(884, 611);
+            this.ClientSize = new System.Drawing.Size(900, 650);
+            this.Controls.Add(this.guna2PictureBox8);
+            this.Controls.Add(this.guna2PictureBox7);
+            this.Controls.Add(this.guna2PictureBox6);
+            this.Controls.Add(this.guna2PictureBox5);
+            this.Controls.Add(this.guna2PictureBox4);
+            this.Controls.Add(this.guna2PictureBox2);
+            this.Controls.Add(this.guna2PictureBox3);
+            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.TxtBxOthers);
+            this.Controls.Add(this.DayToday);
+            this.Controls.Add(this.CmbModel);
+            this.Controls.Add(this.DateToday);
+            this.Controls.Add(this.CmbType);
             this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.TimeOutbtn);
             this.Controls.Add(this.Archive);
+            this.Controls.Add(this.LblPayment);
             this.Controls.Add(this.CashierDataGridView);
-            this.Controls.Add(this.Client1);
+            this.Controls.Add(this.LblDuration);
+            this.Controls.Add(this.TimeInBtnn);
             this.Controls.Add(this.CashierForm);
-            this.Controls.Add(this.AddBtn);
+            this.Controls.Add(this.PaymentBtn);
+            this.Controls.Add(this.Label02);
             this.Controls.Add(this.guna2ImageButton1);
+            this.Controls.Add(this.LabelTimeIn);
             this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.Label01);
+            this.Controls.Add(this.LblVehicleType);
+            this.Controls.Add(this.TxtbxDuration);
+            this.Controls.Add(this.TxtBxPlate);
+            this.Controls.Add(this.LblOthers);
+            this.Controls.Add(this.LblPlateNumber);
+            this.Controls.Add(this.LblVehicleModel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CashierMainForm";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CashierMainForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.CashierMainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            this.Client1.ResumeLayout(false);
-            this.CashiersClient.ResumeLayout(false);
-            this.CashiersClient.PerformLayout();
-            this.Client2.ResumeLayout(false);
-            this.Client2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CashierDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1053,8 +818,6 @@ namespace Vehicle_Track_Secure_Parking_System
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.UI2.WinForms.Guna2Button CashierForm;
         private System.Windows.Forms.Label LblPlateNumber;
-        private Guna.UI2.WinForms.Guna2TabControl Client1;
-        private System.Windows.Forms.TabPage CashiersClient;
         private System.Windows.Forms.Label Label01;
         private Guna.UI2.WinForms.Guna2TextBox TxtbxDuration;
         private Guna.UI2.WinForms.Guna2TextBox TxtBxOthers;
@@ -1062,44 +825,35 @@ namespace Vehicle_Track_Secure_Parking_System
         private System.Windows.Forms.Label LblVehicleModel;
         private Guna.UI2.WinForms.Guna2TextBox TxtBxPlate;
         private System.Windows.Forms.Label LblVehicleType;
-        private System.Windows.Forms.TabPage Client2;
         private System.Windows.Forms.Label Label02;
         private System.Windows.Forms.Label LabelTimeIn;
         private Guna.UI2.WinForms.Guna2Button TimeInBtnn;
-        private Guna.UI2.WinForms.Guna2Button AddBtn;
+        private Guna.UI2.WinForms.Guna2Button PaymentBtn;
         private System.Windows.Forms.Label LblDuration;
         private System.Windows.Forms.Label LblPayment;
         private Guna.UI2.WinForms.Guna2DataGridView CashierDataGridView;
-        private System.Windows.Forms.Label PaymentLabel;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button TimeOutbtn;
         private Guna.UI2.WinForms.Guna2Button Archive;
+        private Guna.UI2.WinForms.Guna2ComboBox CmbModel;
+        private Guna.UI2.WinForms.Guna2ComboBox CmbType;
+        private System.Windows.Forms.Label DayToday;
+        private System.Windows.Forms.Label DateToday;
+        private System.Windows.Forms.Timer timer1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox8;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox7;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private System.Windows.Forms.DataGridViewTextBoxColumn PlateNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn VehicleType;
         private System.Windows.Forms.DataGridViewTextBoxColumn VehicleModel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Others;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TimeIn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TimeInn;
         private System.Windows.Forms.DataGridViewTextBoxColumn TimeOut;
         private System.Windows.Forms.DataGridViewTextBoxColumn Duration;
         private System.Windows.Forms.DataGridViewTextBoxColumn Payment;
-        private System.Windows.Forms.Label LabelPayment2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private System.Windows.Forms.Label LblPayment2;
-        private System.Windows.Forms.Label LblDuration2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private System.Windows.Forms.Label Label04;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label Label03;
-        private Guna.UI2.WinForms.Guna2TextBox TxtBxDuration2;
-        private Guna.UI2.WinForms.Guna2TextBox TxtBxOthers2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label LblModel2;
-        private Guna.UI2.WinForms.Guna2TextBox TxtBxModel2;
-        private System.Windows.Forms.Label LblPlateNumber2;
-        private Guna.UI2.WinForms.Guna2TextBox TxtBxType2;
-        private Guna.UI2.WinForms.Guna2TextBox TxtBxPlate2;
-        private System.Windows.Forms.Label LblType2;
-        private Guna.UI2.WinForms.Guna2ComboBox CmbModel;
-        private Guna.UI2.WinForms.Guna2ComboBox CmbType;
     }
 }

@@ -13,7 +13,7 @@ namespace Vehicle_Track_Secure_Parking_System
 {
     public partial class RegForm : Form
     {
-        MySqlConnection connection = new MySqlConnection("server=localhost;port=3307;username=root;password=;database=vt_db");
+        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;database=vt_db");
        
         private readonly bool userExists;
 
@@ -27,11 +27,24 @@ namespace Vehicle_Track_Secure_Parking_System
         public static string username = "";
         public RegForm()
         {
-            InitializeComponent();
+            InitializeComponent();           
             RegDateTimePicker.MaxDate = DateTime.Today;
             RegDateTimePicker.MinDate = DateTime.Today.AddYears(-60);
+
+            RegFName.KeyPress += new KeyPressEventHandler(NameTextBox_KeyPress);
+            RegMidName.KeyPress += new KeyPressEventHandler(NameTextBox_KeyPress);
+            RegLName.KeyPress += new KeyPressEventHandler(NameTextBox_KeyPress);
         }
-   
+
+        private void NameTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Allow only letters and control keys (e.g., backspace)
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
         private void RegForm_Load(object sender, EventArgs e)
         {
 
@@ -65,7 +78,7 @@ namespace Vehicle_Track_Secure_Parking_System
             {
                 if (!(userExists))
                 {
-                    using (MySqlConnection conn = new MySqlConnection("server=localhost;port=3307;username=root;password=;database=vt_db"))
+                    using (MySqlConnection conn = new MySqlConnection("server=localhost;port=3306;username=root;password=;database=vt_db"))
                     {
                         conn.Open();
                         string iquery = "INSERT INTO vt_db.personal_info (Role,FirstName, MiddleName, LastName, Gender, Birthday, EMail, Username, Password)" +
@@ -146,6 +159,11 @@ namespace Vehicle_Track_Secure_Parking_System
         }
 
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RegFName_TextChanged(object sender, EventArgs e)
         {
 
         }

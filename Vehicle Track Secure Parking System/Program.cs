@@ -13,7 +13,9 @@ namespace Vehicle_Track_Secure_Parking_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StartForm());            
+            Application.Run(new StartForm());
+            Application.Run(new CashierMainForm());
+
         }
     }
 }

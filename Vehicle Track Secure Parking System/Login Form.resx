@@ -117,176 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;lblMessage.Name" xml:space="preserve">
-    <value>lblMessage</value>
-  </data>
-  <data name="&gt;&gt;lblMessage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblMessage.Parent" xml:space="preserve">
-    <value>guna2GradientPanel1</value>
-  </data>
-  <data name="&gt;&gt;lblMessage.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ForgotPass.Name" xml:space="preserve">
-    <value>ForgotPass</value>
-  </data>
-  <data name="&gt;&gt;ForgotPass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ForgotPass.Parent" xml:space="preserve">
-    <value>guna2GradientPanel1</value>
-  </data>
-  <data name="&gt;&gt;ForgotPass.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>guna2GradientPanel1</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;FName1.Name" xml:space="preserve">
-    <value>FName1</value>
-  </data>
-  <data name="&gt;&gt;FName1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FName1.Parent" xml:space="preserve">
-    <value>guna2GradientPanel1</value>
-  </data>
-  <data name="&gt;&gt;FName1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;guna2PictureBox2.Name" xml:space="preserve">
-    <value>guna2PictureBox2</value>
-  </data>
-  <data name="&gt;&gt;guna2PictureBox2.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;guna2PictureBox2.Parent" xml:space="preserve">
-    <value>guna2GradientPanel1</value>
-  </data>
-  <data name="&gt;&gt;guna2PictureBox2.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;guna2PictureBox4.Name" xml:space="preserve">
-    <value>guna2PictureBox4</value>
-  </data>
-  <data name="&gt;&gt;guna2PictureBox4.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;guna2PictureBox4.Parent" xml:space="preserve">
-    <value>guna2GradientPanel1</value>
-  </data>
-  <data name="&gt;&gt;guna2PictureBox4.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;guna2PictureBox3.Name" xml:space="preserve">
-    <value>guna2PictureBox3</value>
-  </data>
-  <data name="&gt;&gt;guna2PictureBox3.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;guna2PictureBox3.Parent" xml:space="preserve">
-    <value>guna2GradientPanel1</value>
-  </data>
-  <data name="&gt;&gt;guna2PictureBox3.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;RegLinkLabel.Name" xml:space="preserve">
-    <value>RegLinkLabel</value>
-  </data>
-  <data name="&gt;&gt;RegLinkLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RegLinkLabel.Parent" xml:space="preserve">
-    <value>guna2GradientPanel1</value>
-  </data>
-  <data name="&gt;&gt;RegLinkLabel.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;LoginButton.Name" xml:space="preserve">
-    <value>LoginButton</value>
-  </data>
-  <data name="&gt;&gt;LoginButton.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;LoginButton.Parent" xml:space="preserve">
-    <value>guna2GradientPanel1</value>
-  </data>
-  <data name="&gt;&gt;LoginButton.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;LoginPassword.Name" xml:space="preserve">
-    <value>LoginPassword</value>
-  </data>
-  <data name="&gt;&gt;LoginPassword.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;LoginPassword.Parent" xml:space="preserve">
-    <value>guna2GradientPanel1</value>
-  </data>
-  <data name="&gt;&gt;LoginPassword.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;LoginUsername.Name" xml:space="preserve">
-    <value>LoginUsername</value>
-  </data>
-  <data name="&gt;&gt;LoginUsername.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;LoginUsername.Parent" xml:space="preserve">
-    <value>guna2GradientPanel1</value>
-  </data>
-  <data name="&gt;&gt;LoginUsername.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;LoginClose.Name" xml:space="preserve">
-    <value>LoginClose</value>
-  </data>
-  <data name="&gt;&gt;LoginClose.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;LoginClose.Parent" xml:space="preserve">
-    <value>guna2GradientPanel1</value>
-  </data>
-  <data name="&gt;&gt;LoginClose.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="guna2GradientPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>289, 208</value>
-  </data>
-  <data name="guna2GradientPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>356, 430</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="guna2GradientPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;guna2GradientPanel1.Name" xml:space="preserve">
-    <value>guna2GradientPanel1</value>
-  </data>
-  <data name="&gt;&gt;guna2GradientPanel1.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2GradientPanel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;guna2GradientPanel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;guna2GradientPanel1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="lblMessage.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblMessage.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Semibold, 8.25pt, style=Bold, Italic</value>
   </data>
@@ -295,7 +130,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblMessage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 230</value>
+    <value>60, 230</value>
   </data>
   <data name="lblMessage.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 13</value>
@@ -328,7 +163,7 @@
     <value>NoControl</value>
   </data>
   <data name="ForgotPass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 319</value>
+    <value>122, 332</value>
   </data>
   <data name="ForgotPass.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 17</value>
@@ -388,7 +223,7 @@
     <value>Segoe UI, 9.75pt, style=Bold</value>
   </data>
   <data name="FName1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 171</value>
+    <value>60, 169</value>
   </data>
   <data name="FName1.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 17</value>
@@ -884,10 +719,10 @@
 </value>
   </data>
   <data name="guna2PictureBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 263</value>
+    <value>3, 256</value>
   </data>
   <data name="guna2PictureBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 26</value>
+    <value>51, 43</value>
   </data>
   <data name="guna2PictureBox4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -1170,10 +1005,10 @@
 </value>
   </data>
   <data name="guna2PictureBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 201</value>
+    <value>14, 190</value>
   </data>
   <data name="guna2PictureBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 26</value>
+    <value>40, 36</value>
   </data>
   <data name="guna2PictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -1200,7 +1035,7 @@
     <value>Segoe UI, 9.75pt, style=Bold</value>
   </data>
   <data name="RegLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 302</value>
+    <value>103, 303</value>
   </data>
   <data name="RegLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>174, 17</value>
@@ -1230,10 +1065,10 @@
     <value>Cooper Black, 12pt</value>
   </data>
   <data name="LoginButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>136, 353</value>
+    <value>120, 364</value>
   </data>
   <data name="LoginButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 32</value>
+    <value>119, 32</value>
   </data>
   <data name="LoginButton.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -1257,10 +1092,13 @@
     <value>None</value>
   </data>
   <data name="LoginPassword.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 9.75pt, style=Bold</value>
+    <value>Open Sans Semibold, 9.75pt, style=Bold</value>
   </data>
   <data name="LoginPassword.Location" type="System.Drawing.Point, System.Drawing">
     <value>60, 263</value>
+  </data>
+  <data name="LoginPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="LoginPassword.Size" type="System.Drawing.Size, System.Drawing">
     <value>276, 36</value>
@@ -1284,10 +1122,13 @@
     <value>None</value>
   </data>
   <data name="LoginUsername.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 9.75pt, style=Bold</value>
+    <value>Open Sans Semibold, 9.75pt, style=Bold</value>
   </data>
   <data name="LoginUsername.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 191</value>
+    <value>60, 190</value>
+  </data>
+  <data name="LoginUsername.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="LoginUsername.Size" type="System.Drawing.Size, System.Drawing">
     <value>276, 36</value>
@@ -1334,6 +1175,27 @@
   <data name="&gt;&gt;LoginClose.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <data name="guna2GradientPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 208</value>
+  </data>
+  <data name="guna2GradientPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 430</value>
+  </data>
+  <data name="guna2GradientPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;guna2GradientPanel1.Name" xml:space="preserve">
+    <value>guna2GradientPanel1</value>
+  </data>
+  <data name="&gt;&gt;guna2GradientPanel1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2GradientPanel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2GradientPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;guna2GradientPanel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <metadata name="guna2BorderlessForm1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -1345,9 +1207,6 @@
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
-  </data>
-  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
@@ -1639,16 +1498,19 @@
   </data>
   <data name="guna2PictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAQ4AAACUCAMAAABV5TcGAAAABGdBTUEAALGPC/xhBQAAAAZQTFRF/LAC
-        /LABUuW0qAAAAZRJREFUeF7tk8EJAEEQg2b7b/o+cpC0EMUKJLl3T39PgsozrjlCNiJQecY1R8hGBCrP
-        uOYI2YhA5RnXHCEbEag845ojZCMClWdcc4TmCLmMQOUZ1xwhGxGoPOOaI2QjApVnXHOEbESg8oxrjpCN
-        CFSecc0RshGByjOuOUI2IlB5xjVHyEYEKs+45gjZiEDlGdccIRsRqDzjmiNkIwKVZ1xzhGxEoPKMa47Q
-        HCGXEag845ojZCMClWdcc4RsRKDyjGuOkI0IVJ5xzRGyEYHKM645QjYiUHnGNUfIRgQqz7jmCNmIQOUZ
-        1xwhGxGoPOOaI2QjApVnXHOEbESg8oxrjpCNCFSecc0RmiPkMgKVZ1xzhGxEoPKMa46QjQhUnnHNEbIR
-        gcozrjlCNiJQecY1R8hGBCrPuOYI2YhA5RnXHCEbEag845ojZCMClWdcc4RsRKDyjGuOkI0IVJ5xzRGy
-        EYHKM645QnOEXEag8oxrjpCNCFSecc0RshGByjOuOUI2IlB5xjVHyEYEKs+45gjZiEDlmfbeB95XRlE/
-        eN2UAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAQ4AAACUCAMAAABV5TcGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGUExURfywAvywAVLltKgAAAGUSURBVHhe7ZPBCQBBEINm+2/6PnKQtBDFCiS5d09/T4LKM645
+        QjYiUHnGNUfIRgQqz7jmCNmIQOUZ1xwhGxGoPOOaI2QjApVnXHOE5gi5jEDlGdccIRsRqDzjmiNkIwKV
+        Z1xzhGxEoPKMa46QjQhUnnHNEbIRgcozrjlCNiJQecY1R8hGBCrPuOYI2YhA5RnXHCEbEag845ojZCMC
+        lWdcc4RsRKDyjGuO0BwhlxGoPOOaI2QjApVnXHOEbESg8oxrjpCNCFSecc0RshGByjOuOUI2IlB5xjVH
+        yEYEKs+45gjZiEDlGdccIRsRqDzjmiNkIwKVZ1xzhGxEoPKMa46QjQhUnnHNEZoj5DIClWdcc4RsRKDy
+        jGuOkI0IVJ5xzRGyEYHKM645QjYiUHnGNUfIRgQqz7jmCNmIQOUZ1xwhGxGoPOOaI2QjApVnXHOEbESg
+        8oxrjpCNCFSecc0RshGByjOuOUJzhFxGoPKMa46QjQhUnnHNEbIRgcozrjlCNiJQecY1R8hGBCrPuOYI
+        2YhA5Zn23gfeV0ZRP3jdlAAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="guna2PictureBox5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="guna2PictureBox5.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>

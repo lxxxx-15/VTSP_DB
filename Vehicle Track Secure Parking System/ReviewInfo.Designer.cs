@@ -46,6 +46,8 @@ namespace Vehicle_Track_Secure_Parking_System
             this.BtnAdminLogout = new Guna.UI2.WinForms.Guna2Button();
             this.StartFormClose = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.ReviewLabelRole = new System.Windows.Forms.Label();
+            this.ReviewRole = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.ReviewLblLName = new System.Windows.Forms.Label();
             this.ReviewLblMidName = new System.Windows.Forms.Label();
@@ -57,8 +59,6 @@ namespace Vehicle_Track_Secure_Parking_System
             this.ReviewOkButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.ReviewRole = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.ReviewLabelRole = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -77,7 +77,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.ReviewUsername.BackColor = System.Drawing.Color.White;
             this.ReviewUsername.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ReviewUsername.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ReviewUsername.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.ReviewUsername.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.ReviewUsername.Location = new System.Drawing.Point(65, 329);
             this.ReviewUsername.Name = "ReviewUsername";
             this.ReviewUsername.Size = new System.Drawing.Size(139, 27);
@@ -105,7 +105,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.ReviewBirthday.BackColor = System.Drawing.Color.White;
             this.ReviewBirthday.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ReviewBirthday.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ReviewBirthday.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.ReviewBirthday.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.ReviewBirthday.Location = new System.Drawing.Point(65, 260);
             this.ReviewBirthday.Name = "ReviewBirthday";
             this.ReviewBirthday.Size = new System.Drawing.Size(216, 27);
@@ -119,7 +119,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.ReviewGender.BackColor = System.Drawing.Color.White;
             this.ReviewGender.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ReviewGender.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ReviewGender.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.ReviewGender.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.ReviewGender.Location = new System.Drawing.Point(298, 260);
             this.ReviewGender.Name = "ReviewGender";
             this.ReviewGender.Size = new System.Drawing.Size(132, 27);
@@ -145,7 +145,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.ReviewFName.BackColor = System.Drawing.Color.White;
             this.ReviewFName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ReviewFName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ReviewFName.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReviewFName.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.ReviewFName.Location = new System.Drawing.Point(65, 91);
             this.ReviewFName.Name = "ReviewFName";
             this.ReviewFName.Size = new System.Drawing.Size(178, 27);
@@ -279,6 +279,32 @@ namespace Vehicle_Track_Secure_Parking_System
             this.guna2GradientPanel1.TabIndex = 137;
             this.guna2GradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2GradientPanel1_Paint);
             // 
+            // ReviewLabelRole
+            // 
+            this.ReviewLabelRole.AutoSize = true;
+            this.ReviewLabelRole.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReviewLabelRole.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.ReviewLabelRole.Location = new System.Drawing.Point(282, 167);
+            this.ReviewLabelRole.Name = "ReviewLabelRole";
+            this.ReviewLabelRole.Size = new System.Drawing.Size(39, 17);
+            this.ReviewLabelRole.TabIndex = 143;
+            this.ReviewLabelRole.Text = "Role:\r\n";
+            this.ReviewLabelRole.UseWaitCursor = true;
+            // 
+            // ReviewRole
+            // 
+            this.ReviewRole.AutoSize = false;
+            this.ReviewRole.BackColor = System.Drawing.Color.White;
+            this.ReviewRole.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ReviewRole.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ReviewRole.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ReviewRole.Location = new System.Drawing.Point(298, 198);
+            this.ReviewRole.Name = "ReviewRole";
+            this.ReviewRole.Size = new System.Drawing.Size(132, 27);
+            this.ReviewRole.TabIndex = 142;
+            this.ReviewRole.Text = null;
+            this.ReviewRole.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -322,7 +348,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.ReviewMidName.BackColor = System.Drawing.Color.White;
             this.ReviewMidName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ReviewMidName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ReviewMidName.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.ReviewMidName.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.ReviewMidName.Location = new System.Drawing.Point(65, 141);
             this.ReviewMidName.Name = "ReviewMidName";
             this.ReviewMidName.Size = new System.Drawing.Size(178, 27);
@@ -336,7 +362,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.ReviewLName.BackColor = System.Drawing.Color.White;
             this.ReviewLName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ReviewLName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ReviewLName.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.ReviewLName.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.ReviewLName.Location = new System.Drawing.Point(65, 198);
             this.ReviewLName.Name = "ReviewLName";
             this.ReviewLName.Size = new System.Drawing.Size(178, 27);
@@ -452,32 +478,6 @@ namespace Vehicle_Track_Secure_Parking_System
             this.guna2ImageButton1.TabIndex = 148;
             this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
-            // ReviewRole
-            // 
-            this.ReviewRole.AutoSize = false;
-            this.ReviewRole.BackColor = System.Drawing.Color.White;
-            this.ReviewRole.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ReviewRole.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ReviewRole.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.ReviewRole.Location = new System.Drawing.Point(298, 198);
-            this.ReviewRole.Name = "ReviewRole";
-            this.ReviewRole.Size = new System.Drawing.Size(132, 27);
-            this.ReviewRole.TabIndex = 142;
-            this.ReviewRole.Text = null;
-            this.ReviewRole.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // ReviewLabelRole
-            // 
-            this.ReviewLabelRole.AutoSize = true;
-            this.ReviewLabelRole.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReviewLabelRole.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.ReviewLabelRole.Location = new System.Drawing.Point(282, 167);
-            this.ReviewLabelRole.Name = "ReviewLabelRole";
-            this.ReviewLabelRole.Size = new System.Drawing.Size(39, 17);
-            this.ReviewLabelRole.TabIndex = 143;
-            this.ReviewLabelRole.Text = "Role:\r\n";
-            this.ReviewLabelRole.UseWaitCursor = true;
-            // 
             // ReviewInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -496,6 +496,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.Controls.Add(this.guna2PictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ReviewInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReviewInfo";
             this.Load += new System.EventHandler(this.ReviewInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

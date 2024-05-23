@@ -14,7 +14,7 @@ namespace Vehicle_Track_Secure_Parking_System
 {
     public partial class LoginForm : Form
     {
-        MySqlConnection connection = new MySqlConnection("server=localhost;port=3307;username=root;password=;database=vt_db");
+        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;database=vt_db");
 
         public LoginForm()
         {
@@ -127,7 +127,7 @@ namespace Vehicle_Track_Secure_Parking_System
             try
             {
                 string selectQuery = "SELECT Role FROM vt_db.personal_info WHERE Username = @Username AND Password = @Password";
-                using (MySqlConnection connection = new MySqlConnection("server=localhost;port=3307;username=root;password=;database=vt_db"))
+                using (MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;database=vt_db"))
                 {
                     connection.Open();
                     using (MySqlCommand command = new MySqlCommand(selectQuery, connection))
@@ -167,6 +167,13 @@ namespace Vehicle_Track_Secure_Parking_System
         private void lblMessage_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ForgotPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            RecoverPassForm recoverpassForm = new RecoverPassForm();
+            recoverpassForm.Show();
+            this.Hide();
         }
     }
 

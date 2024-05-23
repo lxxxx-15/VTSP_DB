@@ -32,7 +32,6 @@ namespace Vehicle_Track_Secure_Parking_System
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CashiersPersonalInfo));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.guna2BorderlessForm2 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.LblFirstName = new System.Windows.Forms.Label();
@@ -75,12 +74,6 @@ namespace Vehicle_Track_Secure_Parking_System
             this.guna2BorderlessForm1.ContainerControl = this;
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
-            // 
-            // guna2BorderlessForm2
-            // 
-            this.guna2BorderlessForm2.ContainerControl = this;
-            this.guna2BorderlessForm2.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm2.TransparentWhileDrag = true;
             // 
             // guna2PictureBox3
             // 
@@ -220,7 +213,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.guna2GradientPanel1.Controls.Add(this.LabelGender);
             this.guna2GradientPanel1.Controls.Add(this.LblFirstName);
             this.guna2GradientPanel1.Controls.Add(this.guna2CirclePictureBox1);
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(332, 117);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(342, 117);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(451, 453);
             this.guna2GradientPanel1.TabIndex = 151;
@@ -497,7 +490,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(0, 0);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(884, 53);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(900, 53);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 155;
             this.guna2PictureBox2.TabStop = false;
@@ -565,7 +558,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.ClientSize = new System.Drawing.Size(884, 611);
+            this.ClientSize = new System.Drawing.Size(900, 650);
             this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.BtnAdminHistory);
             this.Controls.Add(this.BtnAdminMainForm);
@@ -609,7 +602,6 @@ namespace Vehicle_Track_Secure_Parking_System
         private System.Windows.Forms.Label LblFirstName;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm2;
         private Guna.UI2.WinForms.Guna2HtmlLabel LabelFirstName;
         private Guna.UI2.WinForms.Guna2HtmlLabel LblGender;
         private Guna.UI2.WinForms.Guna2HtmlLabel LblBirthday;

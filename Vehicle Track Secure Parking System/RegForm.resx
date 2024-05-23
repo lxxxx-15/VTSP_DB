@@ -5444,7 +5444,7 @@
     <value>None</value>
   </data>
   <data name="RegEmail1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9.75pt, style=Italic</value>
+    <value>Segoe UI Semibold, 9.75pt, style=Bold</value>
   </data>
   <data name="RegEmail1.Location" type="System.Drawing.Point, System.Drawing">
     <value>58, 208</value>
@@ -5855,16 +5855,16 @@
     <value>NoControl</value>
   </data>
   <data name="LblRole.Location" type="System.Drawing.Point, System.Drawing">
-    <value>198, 110</value>
+    <value>185, 110</value>
   </data>
   <data name="LblRole.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 17</value>
+    <value>39, 17</value>
   </data>
   <data name="LblRole.TabIndex" type="System.Int32, mscorlib">
     <value>72</value>
   </data>
   <data name="LblRole.Text" xml:space="preserve">
-    <value>Gender:</value>
+    <value>Role:</value>
   </data>
   <data name="&gt;&gt;LblRole.Name" xml:space="preserve">
     <value>LblRole</value>
@@ -5877,27 +5877,6 @@
   </data>
   <data name="&gt;&gt;LblRole.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="RoleCmb.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="RoleCmb.ItemHeight" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="RoleCmb.Items" xml:space="preserve">
-    <value>Admin</value>
-  </data>
-  <data name="RoleCmb.Items1" xml:space="preserve">
-    <value>Cashier</value>
-  </data>
-  <data name="RoleCmb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>174, 139</value>
-  </data>
-  <data name="RoleCmb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 36</value>
-  </data>
-  <data name="RoleCmb.TabIndex" type="System.Int32, mscorlib">
-    <value>73</value>
   </data>
   <data name="&gt;&gt;RoleCmb.Name" xml:space="preserve">
     <value>RoleCmb</value>
@@ -5932,6 +5911,39 @@
   <data name="&gt;&gt;guna2GradientPanel1.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="RoleCmb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="RoleCmb.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="RoleCmb.Items" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="RoleCmb.Items1" xml:space="preserve">
+    <value>Cashier</value>
+  </data>
+  <data name="RoleCmb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>174, 139</value>
+  </data>
+  <data name="RoleCmb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 36</value>
+  </data>
+  <data name="RoleCmb.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="&gt;&gt;RoleCmb.Name" xml:space="preserve">
+    <value>RoleCmb</value>
+  </data>
+  <data name="&gt;&gt;RoleCmb.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;RoleCmb.Parent" xml:space="preserve">
+    <value>guna2GradientPanel1</value>
+  </data>
+  <data name="&gt;&gt;RoleCmb.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -5940,9 +5952,6 @@
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
-  </data>
-  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>

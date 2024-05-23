@@ -45,15 +45,15 @@ namespace Vehicle_Track_Secure_Parking_System
             this.LoginUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.LoginClose = new Guna.UI2.WinForms.Guna2Button();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GradientPanel1
@@ -94,6 +94,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.ForgotPass.Name = "ForgotPass";
             this.ForgotPass.TabStop = true;
             this.ForgotPass.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.ForgotPass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ForgotPass_LinkClicked);
             // 
             // label1
             // 
@@ -210,14 +211,6 @@ namespace Vehicle_Track_Secure_Parking_System
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
-            // guna2PictureBox5
-            // 
-            resources.ApplyResources(this.guna2PictureBox5, "guna2PictureBox5");
-            this.guna2PictureBox5.ImageRotate = 0F;
-            this.guna2PictureBox5.Name = "guna2PictureBox5";
-            this.guna2PictureBox5.TabStop = false;
-            this.guna2PictureBox5.Click += new System.EventHandler(this.guna2PictureBox5_Click);
-            // 
             // guna2PictureBox1
             // 
             resources.ApplyResources(this.guna2PictureBox1, "guna2PictureBox1");
@@ -239,6 +232,14 @@ namespace Vehicle_Track_Secure_Parking_System
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
+            // guna2PictureBox5
+            // 
+            resources.ApplyResources(this.guna2PictureBox5, "guna2PictureBox5");
+            this.guna2PictureBox5.ImageRotate = 0F;
+            this.guna2PictureBox5.Name = "guna2PictureBox5";
+            this.guna2PictureBox5.TabStop = false;
+            this.guna2PictureBox5.Click += new System.EventHandler(this.guna2PictureBox5_Click);
+            // 
             // LoginForm
             // 
             resources.ApplyResources(this, "$this");
@@ -258,8 +259,8 @@ namespace Vehicle_Track_Secure_Parking_System
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -276,12 +277,12 @@ namespace Vehicle_Track_Secure_Parking_System
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2Button LoginClose;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label FName1;
         private System.Windows.Forms.LinkLabel ForgotPass;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private System.Windows.Forms.Label lblMessage;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
     }
 }

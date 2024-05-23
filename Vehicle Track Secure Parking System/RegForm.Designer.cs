@@ -182,6 +182,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.RegFName.PasswordChar = '\0';
             this.RegFName.PlaceholderText = "";
             this.RegFName.SelectedText = "";
+            this.RegFName.TextChanged += new System.EventHandler(this.RegFName_TextChanged);
             // 
             // GenderCmb
             // 
@@ -340,7 +341,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.RegPass1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.RegPass1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.RegPass1.Name = "RegPass1";
-            this.RegPass1.PasswordChar = '\0';
+            this.RegPass1.PasswordChar = '*';
             this.RegPass1.PlaceholderText = "";
             this.RegPass1.SelectedText = "";
             // 
@@ -358,7 +359,7 @@ namespace Vehicle_Track_Secure_Parking_System
             this.RegRTPass1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.RegRTPass1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.RegRTPass1.Name = "RegRTPass1";
-            this.RegRTPass1.PasswordChar = '\0';
+            this.RegRTPass1.PasswordChar = '*';
             this.RegRTPass1.PlaceholderText = "";
             this.RegRTPass1.SelectedText = "";
             // 
@@ -432,6 +433,7 @@ namespace Vehicle_Track_Secure_Parking_System
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
+            this.ControlBox = false;
             this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.BtnAdminHistory);
