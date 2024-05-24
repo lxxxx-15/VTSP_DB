@@ -14,7 +14,7 @@ namespace Vehicle_Track_Secure_Parking_System
 {
     public partial class CashiersProfile : Form
     {
-        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;database=vt_db");
+        MySqlConnection connection = new MySqlConnection("server=localhost;port=3307;username=root;password=;database=vt_db");
 
         public CashiersProfile()
         {

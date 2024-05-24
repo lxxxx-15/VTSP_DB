@@ -13,7 +13,7 @@ namespace Vehicle_Track_Secure_Parking_System
 {
     public partial class RegForm : Form
     {
-        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;database=vt_db");
+        MySqlConnection connection = new MySqlConnection("server=localhost;port=3307;username=root;password=;database=vt_db");
        
         private readonly bool userExists;
 
@@ -78,7 +78,7 @@ namespace Vehicle_Track_Secure_Parking_System
             {
                 if (!(userExists))
                 {
-                    using (MySqlConnection conn = new MySqlConnection("server=localhost;port=3306;username=root;password=;database=vt_db"))
+                    using (MySqlConnection conn = new MySqlConnection("server=localhost;port=3307;username=root;password=;database=vt_db"))
                     {
                         conn.Open();
                         string iquery = "INSERT INTO vt_db.personal_info (Role,FirstName, MiddleName, LastName, Gender, Birthday, EMail, Username, Password)" +

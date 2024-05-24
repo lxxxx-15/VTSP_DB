@@ -15,7 +15,7 @@ namespace Vehicle_Track_Secure_Parking_System
 {
     public partial class AdminProfile : Form
     {
-        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;database=vt_db");
+        MySqlConnection connection = new MySqlConnection("server=localhost;port=3307;username=root;password=;database=vt_db");
         public AdminProfile()
         {
             InitializeComponent();   
@@ -24,7 +24,7 @@ namespace Vehicle_Track_Secure_Parking_System
         private void LoadChartData()
         {
             // Connection string to your database
-            string connectionString = "server=localhost;port=3306;username=root;password=;database=vt_db";
+            string connectionString = "server=localhost;port=3307;username=root;password=;database=vt_db";
             string query = "SELECT VehicleType, COUNT(*) as Count FROM cashiers_form GROUP BY VehicleType";
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))

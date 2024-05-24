@@ -13,7 +13,7 @@ namespace Vehicle_Track_Secure_Parking_System
 {
     public partial class RecoverPassForm : Form
     {
-        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;database=vt_db");
+        MySqlConnection connection = new MySqlConnection("server=localhost;port=3307;username=root;password=;database=vt_db");
 
         public RecoverPassForm()
         {
@@ -102,6 +102,11 @@ namespace Vehicle_Track_Secure_Parking_System
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
             this.Hide();
+        }
+
+        private void RecoverPassForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

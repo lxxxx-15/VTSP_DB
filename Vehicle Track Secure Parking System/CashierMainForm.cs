@@ -13,7 +13,7 @@ namespace Vehicle_Track_Secure_Parking_System
 {
     public partial class CashierMainForm : Form
     {
-        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=;database=vt_db");
+        MySqlConnection connection = new MySqlConnection("server=localhost;port=3307;username=root;password=;database=vt_db");
 
         private DataTable dataTable;
 
@@ -33,21 +33,9 @@ namespace Vehicle_Track_Secure_Parking_System
 
         private void LoadData()
         {
-            /*throw new NotImplementedException();
-            string connectionString = "server=localhost;port=3306;username=root;password=;database=vt_db";
-            string query = "SELECT * FROM personal_info";
-
-            using (MySqlConnection connection = new MySqlConnection(connectionString))
-            {
-                MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection);
-                dataTable = new DataTable();
-                adapter.Fill(dataTable);
-                CashierDataGridView.DataSource = dataTable;
-            }*/
             try
             {
-                string connectionString = "server=localhost;port=3306;username=root;password=;database=vt_db";
-                string query = "SELECT * FROM personal_info";
+                string query = "SELECT PlateNumber, VehicleType, VehicleModel, Payment, TimeIn, TimeOut, Duration FROM cashiers_form";
 
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
@@ -55,6 +43,15 @@ namespace Vehicle_Track_Secure_Parking_System
                     dataTable = new DataTable();
                     adapter.Fill(dataTable);
                     CashierDataGridView.DataSource = dataTable;
+
+                    // Set up DataGridView columns
+                    CashierDataGridView.Columns["PlateNumber"].HeaderText = "Plate Number";
+                    CashierDataGridView.Columns["VehicleType"].HeaderText = "Type";
+                    CashierDataGridView.Columns["VehicleModel"].HeaderText = "Model";
+                    CashierDataGridView.Columns["Payment"].HeaderText = "Payment";
+                    CashierDataGridView.Columns["TimeIn"].HeaderText = "Time In";
+                    CashierDataGridView.Columns["TimeOut"].HeaderText = "Time Out";
+                    CashierDataGridView.Columns["Duration"].HeaderText = "Duration";
                 }
             }
             catch (Exception ex)
@@ -171,11 +168,11 @@ namespace Vehicle_Track_Secure_Parking_System
                 CashierDataGridView.Rows[n].Cells["TimeInn"].Value = currentTime;
 
                 // Insert data into the database
-                string connectionString = "server=localhost;port=3306;username=root;password=;database=vt_db";
+                string connectionString = "server=localhost;port=3307;username=root;password=;database=vt_db";
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
-                    string iquery = "INSERT INTO cashiers_form (PlateNumber, VehicleType, VehicleModel,  Payment, TimeIn)" +
+                    string iquery = "INSERT INTO cashiers_form (PlateNumber, VehicleType, VehicleModel, Payment, TimeIn)" +
                                     " VALUES (@platenumber, @vehicletype, @vehiclemodel, @payment, @timein)";
                     using (MySqlCommand cmd = new MySqlCommand(iquery, connection))
                     {
@@ -222,10 +219,11 @@ namespace Vehicle_Track_Secure_Parking_System
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
-                    string iquery = "INSERT INTO cashiers_form (TimeOut) VALUES (@timeout)";
+                    string iquery = "UPDATE cashiers_form SET TimeOut = @timeout WHERE PlateNumber = @platenumber";
                     using (MySqlCommand cmd = new MySqlCommand(iquery, connection))
                     {
                         cmd.Parameters.AddWithValue("@timeout", logoutTime);
+                        cmd.Parameters.AddWithValue("@platenumber", CashierDataGridView.CurrentRow.Cells["PlateNumber"].Value.ToString());
                         cmd.ExecuteNonQuery();
                     }
                 }
@@ -253,10 +251,8 @@ namespace Vehicle_Track_Secure_Parking_System
                     // Get the currently selected row
                     DataGridViewRow selectedRow = CashierDataGridView.CurrentRow;
 
-                    
-                    selectedRow.Cells["TimeOut"].Value = currentTime; 
+                    selectedRow.Cells["TimeOut"].Value = currentTime;
                     string timeOut = selectedRow.Cells["TimeOut"].Value.ToString();
-
                 }
                 else
                 {
@@ -271,10 +267,10 @@ namespace Vehicle_Track_Secure_Parking_System
             }
         }
 
-    private void CashierMainForm_Load(object sender, EventArgs e)
-            {
+        private void CashierMainForm_Load(object sender, EventArgs e)
+        {
 
-            }
+        }
 
         private void CmbModel_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -291,8 +287,6 @@ namespace Vehicle_Track_Secure_Parking_System
             {
                 TxtBxOthers.Text = "";
             }
-
-
             else
             {
                 // If there are items, show ComboBox and hide TextBox
@@ -331,7 +325,6 @@ namespace Vehicle_Track_Secure_Parking_System
                     try
                     {
                         // Define the connection string and query
-                        string connectionString = "server=localhost;port=3306;username=root;password=;database=vt_db";
                         string query = "INSERT INTO vehicle_model (model) VALUES (@model)";
 
                         // Create MySqlConnection and MySqlCommand objects
@@ -383,7 +376,4 @@ namespace Vehicle_Track_Secure_Parking_System
         }
     }
 }
-            
-               
- 
 
